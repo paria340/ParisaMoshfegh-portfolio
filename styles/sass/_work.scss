@@ -1,0 +1,36 @@
+
+.wrapperWork{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.workContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // img{
+    //     width: 50%;
+    // }
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.overlay {
+    background: #B0AF7E;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+  
+  .overlay:hover,
+  .overlay:focus {
+    opacity: 0.3;
+  }

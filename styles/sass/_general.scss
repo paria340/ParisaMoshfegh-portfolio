@@ -1,0 +1,50 @@
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lora', serif;
+    background-color: #2C2C2C;
+    // font-family: 'Merriweather', serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    &:hover,
+    &:focus{
+        color:#B0AF7E;
+    }
+}
+
+p{
+    color:rgb(169,169,169);
+    font-size: 2rem;
+}
+
+h3{
+    color: rgb(169,169,169);
+    font-size: 3rem;
+    &:hover,
+    &:focus{
+        color:#B0AF7E;
+    }
+}

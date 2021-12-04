@@ -1,0 +1,46 @@
+.wrapperAbout{
+    width: 80vw;
+    margin: 0 auto;
+}
+h2{
+    font-size: 6rem;
+    color: #B0AF7E;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.about{
+    .myPic{
+        height: 50vh;
+        background-image: url(../images/me.JPG);
+        background-position: top;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+}
+.skills{
+    width: 80%;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        justify-content: center;    
+        text-align: center;       
+        li i{
+            font-size: 60px;
+            padding: 10px;
+        }
+    }
+    .skillIcons{  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 1%;
+        row-gap: 0.2%;
+    }
+}
+
+li i{
+    font-size: 60px;
+    padding: 10px;
+}

@@ -1,0 +1,63 @@
+$blackColor: #2C2C2C;
+
+header{
+    .wrapper{
+        max-width: 2000px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    nav{
+        background-color: $blackColor;
+        height: 10vh;
+        div{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+        p{
+            color:rgb(169,169,169);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 1.1rem;
+        }
+    }
+    .firstPage{
+        background-image: url(../images/mountain.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        img{
+            width: 150px;
+            height: 150px;
+            align-self: center;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            i{
+                font-size: 60px;
+                padding: 10px;
+            }
+        }
+    }
+    h1{
+        color: black;
+        font-size: 7rem;
+    }
+    h1:before{
+        border-top: #B0AF7E 2px solid;
+    }
+    h2{
+        font-size: 6rem;
+        color: white;
+    }
+}
