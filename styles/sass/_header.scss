@@ -33,15 +33,37 @@ header{
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        position: relative;
         img{
             width: 150px;
             height: 150px;
             align-self: center;
-            
+            margin-bottom: 30px;            
         }
         ul{
             display: flex;
             justify-content: center;
         }
     }
+    button{
+        border: none;
+        background: none;
+        position: absolute;
+        left: 48%;
+        bottom: 8%;
+        cursor: pointer;
+        i{
+            color: #454411;
+            animation: arrow 4s infinite;
+        }
+    }
 }
+
+@keyframes arrow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
