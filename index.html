@@ -77,9 +77,9 @@
             <div class="myPic"></div>
             <p>An organic chemistry researcher with a DAT (dental admission exam) of 26TS decided to become a software
                 developer. She just could not get enough learning and realized that there will always be things to learn
-                with coding. So she can make sure that she will always be entertained in this industry since there is an
-                unlimited amount of constantly updating knowledge. Just stoked about her journey to learn, code, grow
-                and have fun with it!</p>
+                in this industry. So she can make sure that she will always be entertained learning since there is an
+                unlimited amount of constantly updating knowledge. She is just stoked about her journey to learn, code
+                and grow! Also, in love with skiing and the nature now she can possibly work from anywhere!</p>
         </section>
         <section class="skills" id="skills">
             <h2>Skills</h2>
@@ -183,21 +183,21 @@
         </section>
         <section class="contact contactWrapper" id="contact">
             <h2>CONTACT</h2>
-            <form action="">
+            <form action="mailto:paria340@gmail.com" method='POST'>
                 <div class="inputs">
                     <h4>CONTACT FORM</h4>
                     <label for="fullName"></label>
-                    <input type="text" id="fullName" name="fullName" placeholder="" required="">
+                    <input type="text" id="fullName" class="fullName" name="fullName" placeholder="" required="">
 
                     <label for="subject"></label>
                     <input type="text">
 
                     <label for="email"></label>
-                    <input type="email" name="email" placeholder="" required="" id="email">
+                    <input type="email" name="email" placeholder="" required="" id="email" class="email">
                     <button type="submit">Send</button>
                 </div>
-                <label for="email"></label>
-                <textarea name="" id="" cols="110" rows="7" required="" placeholder=""></textarea>
+                <label for="message"></label>
+                <textarea name="message" class="message" id="message" cols="110" rows="7" required="" placeholder=""></textarea>
                 <div class="info">
                     <div class="phone">
                         <h4>PHONE</h4>
@@ -214,7 +214,7 @@
     <footer>
         <p>Created by Parisa Moshfegh</p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scripts.js"></script>
 </body>
 

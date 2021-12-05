@@ -523,7 +523,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 40%;
   margin-right: 20px;
 }
 
@@ -536,6 +536,7 @@ input {
 
 textarea {
   background-color: #585858;
+  margin-bottom: 30px;
   margin-top: 30px;
   border: none;
 }
