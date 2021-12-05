@@ -2,15 +2,15 @@
 functionality = {}
 
 functionality.onSubmit = function(){
-    console.log('hello')
+    
     const formEl = document.querySelector('form')
     formEl.addEventListener('submit', function(event){
         event.preventDefault();
         let name = document.querySelector('.fullName').value
         let email = document.querySelector('.email').value
-        let message = document.querySelector('.message')
+        let message = document.querySelector('.message').value
 
-        // formEl.reset()
+        formEl.reset()
 
         sendEmail(name, email, message)
     })

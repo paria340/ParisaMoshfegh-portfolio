@@ -1,7 +1,8 @@
 $greenColor: #B0AF7E;
+$darkGrey: rgb(88,88,88);
 
 .contactWrapper{
-    width: 80vw;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -18,13 +19,20 @@ form{
 
 input{
     margin-bottom: 10px;
-    background-color: rgb(88,88,88);
+    background-color: $darkGrey;
     border: none;
     height: 40px;
 }
 
+input[type=text],
+input[type=email],
+textarea {
+    color: white;
+    font-size: 2rem;
+}
+
 textarea{
-    background-color: rgb(88,88,88);
+    background-color: $darkGrey;
     margin-bottom: 30px;
     margin-top: 30px;
     border: none;
@@ -38,7 +46,6 @@ textarea{
 }
 
 button{
-    width: 20%;
     color: white;
     background-color:#909090;
     border: none;

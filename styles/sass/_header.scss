@@ -4,7 +4,7 @@ header{
     .wrapper{
         max-width: 2000px;
         margin: 0 auto;
-        width: 80%;
+        width: 70%;
     }
     nav{
         background-color: $blackColor;
@@ -18,7 +18,6 @@ header{
             padding-top: 20px;
         }
         p{
-            color:rgb(169,169,169);
             padding-top: 5px;
             padding-bottom: 5px;
             font-size: 1.1rem;
@@ -43,21 +42,6 @@ header{
         ul{
             display: flex;
             justify-content: center;
-            i{
-                font-size: 60px;
-                padding: 10px;
-            }
         }
-    }
-    h1{
-        color: black;
-        font-size: 7rem;
-    }
-    h1:before{
-        border-top: #B0AF7E 2px solid;
-    }
-    h2{
-        font-size: 6rem;
-        color: white;
     }
 }

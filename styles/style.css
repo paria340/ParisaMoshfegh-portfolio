@@ -247,15 +247,53 @@ p {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "Lora", serif;
+  background-color: #2C2C2C;
+}
+
 img {
   width: 100%;
   display: block;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Lora", serif;
-  background-color: #2C2C2C;
+h1 {
+  color: black;
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 6rem;
+  color: white;
+}
+
+h3 {
+  font-size: 6rem;
+  color: #B0AF7E;
+  text-align: center;
+  margin: 100px 0 100px 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: darkgray;
+  font-size: 3rem;
+}
+h4:hover, h4:focus {
+  color: #B0AF7E;
+}
+
+h5 {
+  color: #B0AF7E;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: darkgray;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 ul {
@@ -271,30 +309,21 @@ a:hover, a:focus {
   color: #B0AF7E;
 }
 
-p {
-  color: darkgray;
-  font-size: 1.7rem;
-  line-height: 1.5;
+i {
+  font-size: 60px;
+  padding: 10px;
 }
 
-h3 {
-  color: darkgray;
-  font-size: 3rem;
-}
-h3:hover, h3:focus {
-  color: #B0AF7E;
-}
-
-h4 {
-  color: #B0AF7E;
-  font-size: 2rem;
-  margin-bottom: 10px;
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 header .wrapper {
   max-width: 2000px;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
 }
 header nav {
   background-color: #2C2C2C;
@@ -312,7 +341,6 @@ header nav ul {
   padding-top: 20px;
 }
 header nav p {
-  color: darkgray;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 1.1rem;
@@ -349,34 +377,10 @@ header .firstPage ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-header .firstPage ul i {
-  font-size: 60px;
-  padding: 10px;
-}
-header h1 {
-  color: black;
-  font-size: 7rem;
-}
-header h1:before {
-  border-top: #B0AF7E 2px solid;
-}
-header h2 {
-  font-size: 6rem;
-  color: white;
-}
 
 .wrapperAbout {
-  width: 80vw;
+  width: 70%;
   margin: 0 auto;
-}
-
-h2 {
-  font-size: 6rem;
-  color: #B0AF7E;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
 }
 
 .about .myPic {
@@ -413,17 +417,13 @@ h2 {
           column-gap: 1%;
   row-gap: 0.2%;
 }
-.skills .skillIcons i:hover {
+.skills .skillIcons i:hover,
+.skills .skillIcons i:focus {
   color: #B0AF7E;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
   -webkit-animation: spin 1000ms infinite linear;
           animation: spin 1000ms infinite linear;
-}
-
-li i {
-  font-size: 60px;
-  padding: 10px;
 }
 
 @-webkit-keyframes spin {
@@ -448,7 +448,7 @@ li i {
   }
 }
 .wrapperWork {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -505,7 +505,7 @@ li i {
 }
 
 .contactWrapper {
-  width: 80vw;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -534,6 +534,13 @@ input {
   height: 40px;
 }
 
+input[type=text],
+input[type=email],
+textarea {
+  color: white;
+  font-size: 2rem;
+}
+
 textarea {
   background-color: #585858;
   margin-bottom: 30px;
@@ -549,16 +556,9 @@ textarea {
 }
 
 button {
-  width: 20%;
   color: white;
   background-color: #909090;
   border: none;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }

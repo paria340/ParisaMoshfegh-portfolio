@@ -1,15 +1,8 @@
 .wrapperAbout{
-    width: 80vw;
+    width: 70%;
     margin: 0 auto;
 }
-h2{
-    font-size: 6rem;
-    color: #B0AF7E;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
+
 .about{
     .myPic{
         height: 50vh;
@@ -37,19 +30,15 @@ h2{
         grid-template-rows: 1fr;
         column-gap: 1%;
         row-gap: 0.2%;
-        i:hover{
+        i:hover,
+        i:focus{
             color: #B0AF7E;
             transition: 0.5s all ease-in-out;
-            // animation-name: spin;
             animation: spin 1000ms infinite linear;
         }
     }
 }
 
-li i{
-    font-size: 60px;
-    padding: 10px;
-}
 
 @keyframes spin {
     from {
