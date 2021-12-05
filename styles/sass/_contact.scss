@@ -1,0 +1,46 @@
+$greenColor: #B0AF7E;
+
+.contactWrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+}
+
+input{
+    margin-bottom: 10px;
+    background-color: rgb(88,88,88);
+    border: none;
+    height: 40px;
+}
+
+textarea{
+    background-color: rgb(88,88,88);
+    margin-top: 30px;
+    border: none;
+}
+
+.info{
+    margin-left: 20px;
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+button{
+    width: 20%;
+    color: white;
+    background-color:#909090;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

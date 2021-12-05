@@ -37,7 +37,8 @@ a{
 
 p{
     color:rgb(169,169,169);
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
 }
 
 h3{
@@ -47,4 +48,10 @@ h3{
     &:focus{
         color:#B0AF7E;
     }
+}
+
+h4{
+    color:#B0AF7E;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }

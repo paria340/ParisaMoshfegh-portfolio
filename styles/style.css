@@ -273,7 +273,8 @@ a:hover, a:focus {
 
 p {
   color: darkgray;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 h3 {
@@ -282,6 +283,12 @@ h3 {
 }
 h3:hover, h3:focus {
   color: #B0AF7E;
+}
+
+h4 {
+  color: #B0AF7E;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 header .wrapper {
@@ -406,12 +413,40 @@ h2 {
           column-gap: 1%;
   row-gap: 0.2%;
 }
+.skills .skillIcons i:hover {
+  color: #B0AF7E;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  -webkit-animation: spin 1000ms infinite linear;
+          animation: spin 1000ms infinite linear;
+}
 
 li i {
   font-size: 60px;
   padding: 10px;
 }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(150deg);
+            transform: rotateY(150deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(150deg);
+            transform: rotateY(150deg);
+  }
+}
 .wrapperWork {
   width: 80%;
   margin: 0 auto;
@@ -421,9 +456,33 @@ li i {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.workContainer a {
+  font-size: 1.7rem;
+  padding-right: 10px;
+}
+.workContainer i {
+  font-size: 30px;
+  color: #B0AF7E;
+  margin-top: 10px;
+}
 
 .imgContainer {
   position: relative;
+}
+
+.paragraphRight {
+  margin: auto;
+  padding-left: 30px;
+}
+
+.paragraphLeft {
+  margin: auto;
+}
+
+.paragraphRight p,
+.paragraphLeft p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .overlay {
@@ -443,4 +502,62 @@ li i {
 .overlay:hover,
 .overlay:focus {
   opacity: 0.3;
+}
+
+.contactWrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-right: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  background-color: #585858;
+  border: none;
+  height: 40px;
+}
+
+textarea {
+  background-color: #585858;
+  margin-top: 30px;
+  border: none;
+}
+
+.info {
+  margin-left: 20px;
+}
+.info p {
+  margin-bottom: 5px;
+}
+
+button {
+  width: 20%;
+  color: white;
+  background-color: #909090;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

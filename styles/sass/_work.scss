@@ -7,13 +7,34 @@
 .workContainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // img{
-    //     width: 50%;
-    // }
+    a{
+        font-size: 1.7rem;
+        padding-right: 10px;
+    }
+    i{
+        font-size: 30px;
+        color: #B0AF7E;
+        margin-top: 10px;
+    }
 }
 
 .imgContainer{
     position: relative;
+}
+
+.paragraphRight{
+    margin: auto;
+    padding-left: 30px;
+}
+
+.paragraphLeft{
+    margin: auto;
+}
+
+.paragraphRight p,
+.paragraphLeft p{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .overlay {

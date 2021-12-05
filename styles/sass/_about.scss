@@ -37,10 +37,25 @@ h2{
         grid-template-rows: 1fr;
         column-gap: 1%;
         row-gap: 0.2%;
+        i:hover{
+            color: #B0AF7E;
+            transition: 0.5s all ease-in-out;
+            // animation-name: spin;
+            animation: spin 1000ms infinite linear;
+        }
     }
 }
 
 li i{
     font-size: 60px;
     padding: 10px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(150deg);
+    }
 }
