@@ -2,6 +2,7 @@ $baseFont: 'Lora', serif;
 $blackColor: #2C2C2C;
 $greenColor:#B0AF7E;
 $greyColor: rgb(169,169,169);
+$pinkColor: #ea8a8a;
 
 body,
 ul,
@@ -31,20 +32,20 @@ h1 {
 	font-size: 7rem;  
 	font-weight: 900;
 	text-shadow: 
-		-0.0075em 0.0075em 0 mix(#fff, black, 94%),
-		0.005em 0.005em 0 mix(#fff, black, 60%),
-		0.01em 0.01em 0 mix(#fff, black, 62%), 
-		0.015em 0.015em mix(#fff, black, 64%), 
-		0.02em 0.02em 0 mix(#fff, black, 66%), 
-		0.025em 0.025em 0 mix(#fff, black, 68%),
-		0.03em 0.03em 0 mix(#fff, black, 70%),
-		0.035em 0.035em 0 mix(#fff, black, 72%);
+		-0.0075em 0.0075em 0 mix(#fff, $pinkColor, 94%),
+		0.005em 0.005em 0 mix(#fff, $pinkColor, 60%),
+		0.01em 0.01em 0 mix(#fff, $pinkColor, 62%), 
+		0.015em 0.015em mix(#fff, $pinkColor, 64%), 
+		0.02em 0.02em 0 mix(#fff, $pinkColor, 66%), 
+		0.025em 0.025em 0 mix(#fff, $pinkColor, 68%),
+		0.03em 0.03em 0 mix(#fff, $pinkColor, 70%),
+		0.035em 0.035em 0 mix(#fff, $pinkColor, 72%);
 }
 
 
 h2{
     font-size: 6rem;
-    color: white;
+    color: $pinkColor;
 }
 
 h3{
@@ -65,14 +66,17 @@ h4{
 }
 
 h5{
-    color:$greenColor;
+    color:$pinkColor;
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 p{
-    color:$greyColor;
-    font-size: 1.7rem;
+    // color:$greyColor;
+    color: white;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
@@ -96,7 +100,11 @@ i{
 }
 
 footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 20px;
+    border-top: solid 1px black;
+    padding-top: 20px;
 }

@@ -1,5 +1,8 @@
+$greenColor:#B0AF7E;
+$pinkColor: #ea8a8a;
+
 .wrapperAbout{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -12,6 +15,25 @@
         margin-bottom: 50px;
     }
 }
+
+.char{
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+
+
 .skills{
     width: 80%;
     margin: 0 auto;
@@ -22,6 +44,7 @@
         li i{
             font-size: 60px;
             padding: 10px;
+            color: $greenColor;
         }
     }
     .skillIcons{  
@@ -32,9 +55,9 @@
         row-gap: 0.2%;
         i:hover,
         i:focus{
-            color: #B0AF7E;
+            color: $pinkColor;
             transition: 0.5s all ease-in-out;
-            animation: spin 1000ms infinite linear;
+            animation: spin 400ms infinite linear;
         }
     }
 }

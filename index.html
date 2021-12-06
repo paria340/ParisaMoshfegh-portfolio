@@ -76,9 +76,14 @@
             </div>
         </header>
         <section class="about wrapperAbout" id="about">
-            <h3>ABOUT</h3>
+            <h3>ABOUT ME</h3>
             <div class="myPic"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam cum, iste explicabo ad minima nisi, beatae assumenda qui quis molestiae odio. Ab consectetur minima mollitia assumenda atque vel dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error quisquam, quasi temporibus nesciunt molestiae, aperiam nihil odio cum voluptate cupiditate qui, ex iusto aut recusandae ea sequi ad fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eius dolorum ad dicta, possimus aut, dignissimos ratione assumenda vitae dolor maiores vel, nulla necessitatibus rerum consectetur distinctio minima! Totam, magni.</p>
+            <p id="text" class="text">Hello world! This is the story of an organic chemist researcher who decided to
+                dive into coding. She fits nicely in an industry where there is an unlimited amount of constantly
+                updating knowledge. She is stoked about this new journey to do creative puzzle-solving, build
+                engaging user experience websites and learn, of course. When she is not geeking out on new
+                technologies and concepts in web development, she is mostly exploring nature, the lakes, or the
+                mountains.</p>
         </section>
         <section class="skills" id="skills">
             <h3>Skills</h3>
@@ -96,14 +101,17 @@
         </section>
         <section class="work wrapperWork">
             <h3>My work</h3>
-            <div class="workContainer">
-                <div class="imgContainer">
+            <div class="workContainer revealer">
+                <div class="imgContainer revealme fromleft">
                     <img src="./images/ethicalMakeup.png" alt="first page of ethicalMakeup website">
                     <div class="overlay"></div>
                 </div>
-                <div class="paragraphRight">
+                <div class="paragraphRight revealme fromright">
                     <h4>Ethical Makeup</h4>
-                    <p>Ethical makeup was proudly built as a group project. It helps you find and search for vegan makeup products. The homepage features products under $10 with a catalog to view different products split into different sections. It is so far my favorite makeup website, not sure about you!</p>
+                    <p>Ethical makeup was proudly built as a group project. It helps you find and search for vegan
+                        makeup products. The homepage features products under $10 with a catalog to view different
+                        products split into different sections. It is so far my favorite makeup website, not sure about
+                        you!</p>
                     <a href="https://ethical-makeup-always-vegan.netlify.app/">Try it out</a>
                     <a href="https://github.com/group-project-four/ethicalMakeup">See the code</a>
                     <div class="icons">
@@ -116,8 +124,8 @@
                     </div>
                 </div>
             </div>
-            <div class="workContainer" id="work">
-                <div class="paragraphLeft">
+            <div class="workContainer revealer" id="work">
+                <div class="paragraphLeft revealme fromleft">
                     <h4>Book Genius</h4>
                     <p>I love reading good books. Some books have completely changed how I see and perceive reality.
                         But, unfortunately, a good book is not easy to find, and you need an excellent website to search
@@ -132,17 +140,17 @@
                         <i class="devicon-firebase-plain"></i>
                     </div>
                 </div>
-                <div class="imgContainer">
+                <div class="imgContainer revealme fromright">
                     <img src="./images/bookGrenius.png" alt="first page of bookGenius website">
                     <div class="overlay"></div>
                 </div>
             </div>
-            <div class="workContainer">
-                <div class="imgContainer">
+            <div class="workContainer revealer">
+                <div class="imgContainer revealme fromleft">
                     <img src="./images/woof.png" alt="first page of woof website">
                     <div class="overlay"></div>
                 </div>
-                <div class="paragraphRight">
+                <div class="paragraphRight revealme fromright">
                     <h4>All The Woofs</h4>
                     <p>Obsessed with dogs and learning about them? Are you looking to adopt one but need more
                         information about the breeds? Are you bored and just need to read some random dog facts?? The
@@ -157,8 +165,8 @@
                     </div>
                 </div>
             </div>
-            <div class="workContainer">
-                <div class="paragraphLeft">
+            <div class="workContainer revealer">
+                <div class="paragraphLeft revealme fromleft">
                     <h4>Client PSD Conversion</h4>
                     <p>A multi-page PSD conversion for a photography company. The fully responsive website has been
                         designed considering all the client's detailed specifications.</p>
@@ -171,29 +179,31 @@
                         <i class="fab fa-sass"></i>
                     </div>
                 </div>
-                <div class="imgContainer">
+                <div class="imgContainer revealme fromright">
                     <img src="./images/captured.png" alt="first page of captured website">
                     <div class="overlay"></div>
                 </div>
             </div>
         </section>
         <section class="contact contactWrapper" id="contact">
-            <h3>CONTACT</h3>
+            <h3>CONTACT ME</h3>
             <form action="mailto:paria340@gmail.com" method='POST'>
                 <div class="inputs">
-                    <h5>CONTACT FORM</h5>
                     <label for="fullName"></label>
-                    <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your Name" required="">
+                    <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your Name"
+                        required="">
 
                     <label for="subject"></label>
                     <input type="text" placeholder="Subject" required="">
 
                     <label for="email"></label>
                     <input type="email" name="email" placeholder="Your Email" required="" id="email" class="email">
+                </div>
+                <div class="sendMessage">
+                    <label for="message"></label>
+                    <textarea name="message" class="message" id="message" cols="50" rows="6" required="" placeholder="Tell me anything I need to hear!"></textarea>
                     <button type="submit">Send</button>
                 </div>
-                <label for="message"></label>
-                <textarea name="message" class="message" id="message" cols="110" rows="7" required="" placeholder="Tell me anything I need to hear!"></textarea>
                 <div class="info">
                     <div class="phone">
                         <h5>PHONE</h5>
@@ -206,6 +216,9 @@
                 </div>
             </form>
         </section>
+        <!-- <button type="submit" class="toTop">
+            <img src="./images/2.png" alt="a button to go to the top">
+        </button> -->
     </main>
     <footer>
         <p>Developed by Parisa Moshfegh</p>

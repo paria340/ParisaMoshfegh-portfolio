@@ -2,7 +2,7 @@ $greenColor: #B0AF7E;
 $darkGrey: rgb(88,88,88);
 
 .contactWrapper{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@ form{
 }
 
 input{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: $darkGrey;
     border: none;
     height: 40px;
@@ -30,25 +30,30 @@ textarea {
     color: white;
     font-size: 2rem;
 }
-
-textarea{
-    background-color: $darkGrey;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    border: none;
-}
-
 .info{
     margin-left: 20px;
-    p{
-        margin-bottom: 5px;
-    }
+}
+textarea{
+    background-color: $darkGrey;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    resize: none;
+}
+
+
+.sendMessage{
+        display: flex;
+        flex-direction: column;
 }
 
 button{
-    color: white;
-    background-color:#909090;
+    color: black;
+    font-size: 1.8rem;;
+    background-color:#ea8a8a;
     border: none;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 100px;
 }

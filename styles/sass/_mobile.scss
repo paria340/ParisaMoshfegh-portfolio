@@ -1,0 +1,34 @@
+@media (max-width: 1240px){
+    .imgContainer{
+        width: 100%;
+    }
+    .paragraphRight,
+    .paragraphLeft{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .paragraphLeft{
+        order: 1;
+    }
+    .workContainer{
+        flex-direction: column;
+    }
+
+    form{
+        flex-direction: column;
+    }
+    .inputs{
+        width: 100%;
+    }
+    // .sendMessage{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+}
+
+@media(max-width: 480px){
+}

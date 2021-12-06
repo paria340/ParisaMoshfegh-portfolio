@@ -30,14 +30,56 @@ functionality.scroll = function () {
     const button = document.querySelector('.arrow')
     button.addEventListener('click', function () {
         window.scroll({top: 1000, left: 0, behavior: 'smooth'});
+        functionality.paragraphAnimation()
     });
 }
+
+functionality.paragraphAnimation = function () {
+    let text = document.getElementById('text');
+    let newDom = '';
+    const animationDelay = 6;
+    for(let i = 0; i < text.innerText.length; i++)
+    {
+        newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+    }
+    text.innerHTML = newDom;
+    let length = text.children.length;
+    for(let i = 0; i < length; i++)
+    {
+        text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+    }
+
+}
+
+function reveal() {
+    let revealerpoint = 150;
+    let revealers = document.querySelectorAll('.revealer');
+    for (let i = 0; i < revealers.length; i++) {
+        let windowheight = window.innerHeight;
+        console.log(windowheight)
+        let revealertop = revealers[i].getBoundingClientRect().top;
+        console.log(revealertop)
+        let revealerbottom = revealers[i].getBoundingClientRect().bottom;
+        console.log(revealerbottom)
+        if (revealertop < windowheight - revealerpoint) {
+            revealers[i].classList.add('active')
+        } else {
+            revealers[i].classList.remove('active');
+        };
+        if (revealerbottom < 0 + revealerpoint) {
+            revealers[i].classList.remove('active');
+        }
+    } 
+};
 
 
 
 functionality.init = function () {
     functionality.onSubmit()
     functionality.scroll()
+    functionality.paragraphAnimation()
+    window.addEventListener('scroll', reveal);
+    reveal();
 }
 
 functionality.init()
