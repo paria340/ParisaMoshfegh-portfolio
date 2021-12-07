@@ -23,12 +23,34 @@
     .inputs{
         width: 100%;
     }
-    // .sendMessage{
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    .workContainer{
+        margin-bottom: 85%;
+    }
+    .paragraphLeft,
+    .paragraphRight{
+        margin-top: 50%;
+    }
 
 }
 
 @media(max-width: 480px){
+    header button{
+        left: 38%;
+    }
+    .workContainer{
+        margin-bottom: 600px;
+    }
+    .paragraphLeft,
+    .paragraphRight{
+        margin-top: 50%;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    a{
+        font-size: 1.2rem;
+    }
 }

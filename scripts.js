@@ -56,30 +56,30 @@ function reveal() {
     let revealers = document.querySelectorAll('.revealer');
     for (let i = 0; i < revealers.length; i++) {
         let windowheight = window.innerHeight;
-        console.log(windowheight)
         let revealertop = revealers[i].getBoundingClientRect().top;
-        console.log(revealertop)
         let revealerbottom = revealers[i].getBoundingClientRect().bottom;
-        console.log(revealerbottom)
         if (revealertop < windowheight - revealerpoint) {
             revealers[i].classList.add('active')
         } else {
-            revealers[i].classList.remove('active');
-        };
-        if (revealerbottom < 0 + revealerpoint) {
-            revealers[i].classList.remove('active');
+            revealers[i].classList.remove('active')
         }
     } 
-};
+}
 
+functionality.toTop = function() {
+    const buttonEl = document.querySelector('.toTop')
+    buttonEl.addEventListener('click', function(event) {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    })
+}
 
 
 functionality.init = function () {
     functionality.onSubmit()
     functionality.scroll()
     functionality.paragraphAnimation()
-    window.addEventListener('scroll', reveal);
-    reveal();
+    window.addEventListener('scroll', reveal)
+    functionality.toTop()
 }
 
 functionality.init()

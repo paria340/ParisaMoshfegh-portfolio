@@ -59,6 +59,13 @@ header{
     }
 }
 
+.toTop{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    animation: arrow 4s infinite;
+}
+
 @keyframes arrow {
     0%, 100% {
       transform: translateY(0);

@@ -13,6 +13,8 @@ $pinkColor: #ea8a8a;
         background-position: top;
         background-size: cover;
         margin-bottom: 50px;
+        border: $pinkColor 5px solid;
+        border-radius: 10px;
     }
 }
 
@@ -31,8 +33,6 @@ $pinkColor: #ea8a8a;
         transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
-
-
 
 .skills{
     width: 80%;
@@ -56,18 +56,7 @@ $pinkColor: #ea8a8a;
         i:hover,
         i:focus{
             color: $pinkColor;
-            transition: 0.5s all ease-in-out;
-            animation: spin 400ms infinite linear;
         }
     }
 }
 
-
-@keyframes spin {
-    from {
-        transform:rotateY(0deg);
-    }
-    to {
-        transform:rotateY(150deg);
-    }
-}

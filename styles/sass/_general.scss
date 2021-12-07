@@ -48,12 +48,26 @@ h2{
     color: $pinkColor;
 }
 
+.underbar{
+    width: 0;
+    height: 5px;
+    background: rgba(100,100,200,0);
+    top: 20px;
+    position: absolute;
+    transition: all ease 0.5s;
+}
+
 h3{
     font-size: 6rem;
     color: $greenColor;
     text-align: center;
     margin: 100px 0 100px 0;
     text-transform: uppercase;
+    transition: all ease 0.5s;
+    &:hover,
+    &:focus{
+      text-shadow: 0px -2px 0px rgba(0,0,0,1), 0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
+    }
 }
 
 h4{
@@ -74,7 +88,6 @@ h5{
 }
 
 p{
-    // color:$greyColor;
     color: white;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -87,7 +100,7 @@ ul{
 a{
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     &:hover,
     &:focus{
         color:$greenColor;
