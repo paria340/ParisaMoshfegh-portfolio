@@ -50,25 +50,30 @@ functionality.paragraphAnimation = function () {
     }
 
 }
+// let widnowWidth = window.innerWidth
+// let limit = 500
+// if(widnowWidth > limit){
+    function reveal() {
+        let revealerpoint = 150;
+        let revealers = document.querySelectorAll('.revealer');
+        for (let i = 0; i < revealers.length; i++) {
+            let windowheight = window.innerHeight;
+            let revealertop = revealers[i].getBoundingClientRect().top;
+            // let revealerbottom = revealers[i].getBoundingClientRect().bottom;
+            if (revealertop < windowheight - revealerpoint) {
+                revealers[i].classList.add('active')
+            } else {
+                revealers[i].classList.remove('active')
+            }
+        } 
+    }
+// }
 
-function reveal() {
-    let revealerpoint = 150;
-    let revealers = document.querySelectorAll('.revealer');
-    for (let i = 0; i < revealers.length; i++) {
-        let windowheight = window.innerHeight;
-        let revealertop = revealers[i].getBoundingClientRect().top;
-        let revealerbottom = revealers[i].getBoundingClientRect().bottom;
-        if (revealertop < windowheight - revealerpoint) {
-            revealers[i].classList.add('active')
-        } else {
-            revealers[i].classList.remove('active')
-        }
-    } 
-}
+
 
 functionality.toTop = function() {
     const buttonEl = document.querySelector('.toTop')
-    buttonEl.addEventListener('click', function(event) {
+    buttonEl.addEventListener('click', function() {
         window.scrollTo({top: 0, behavior: "smooth"});
     })
 }

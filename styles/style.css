@@ -530,13 +530,14 @@ header button i {
 .wrapperWork {
   width: 80%;
   margin: 0 auto;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 .workContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   margin-bottom: 35%;
 }
 .workContainer a {
