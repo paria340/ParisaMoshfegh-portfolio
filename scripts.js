@@ -1,7 +1,6 @@
 
 functionality = {}
 
-
 //adding an event listener on the form to send an email
 functionality.onSubmit = function () {
     const formEl = document.querySelector('form')
@@ -36,9 +35,7 @@ function sendEmail(name, email, message) {
 //animation on ABOUT section picture using gsap library
 functionality.pictureAnime = function () {
     gsap.registerPlugin(ScrollTrigger);
-
     let revealContainers = document.querySelectorAll(".reveal");
-
     revealContainers.forEach((container) => {
         let image = container.querySelector("img");
         let tl = gsap.timeline({
@@ -47,7 +44,6 @@ functionality.pictureAnime = function () {
                 toggleActions: "restart none none reset"
             }
         });
-
         tl.set(container, { autoAlpha: 1 });
         tl.from(container, 1.5, {
             xPercent: -100,
@@ -76,14 +72,21 @@ document.onreadystatechange = function () {
     if (document.readyState == "interactive") {
         let displayMenu = false
         const menu = document.querySelector('.fa-bars')
+        const menuOption = document.querySelector('header .wrapper')
+        const menuOptionLi = document.querySelector('header .wrapper li a')
         menu.addEventListener('click', function () {
             displayMenu = !displayMenu
-            const menuOption = document.querySelector('header .wrapper')
             if(displayMenu){
                 menuOption.classList.add('open')
             }else{
                 menuOption.classList.remove('open')
             }
+        })
+        
+        menuOptionLi.addEventListener('click', function (event) {
+            console.log(event)
+            displayMenu = !displayMenu
+            menuOption.classList.remove('open')
         })
     }
 }

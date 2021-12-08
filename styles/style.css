@@ -783,10 +783,10 @@ button {
     position: relative;
     z-index: 10;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
   }
   header .wrapper.open li p {
-    visibility: hidden;
+    display: none;
   }
   header .wrapper.open li a {
     font-size: 5rem;
