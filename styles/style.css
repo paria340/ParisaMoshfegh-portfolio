@@ -259,15 +259,16 @@ img {
 }
 
 h1 {
-  color: #262626;
+  color: #d5526c;
   font-size: 7rem;
   font-weight: 900;
-  text-shadow: -0.0075em 0.0075em 0 #fef8f8, 0.005em 0.005em 0 #f7d0d0, 0.01em 0.01em 0 #f7d3d3, 0.015em 0.015em #f7d5d5, 0.02em 0.02em 0 #f8d7d7, 0.025em 0.025em 0 #f8dada, 0.03em 0.03em 0 #f9dcdc, 0.035em 0.035em 0 #f9dede;
+  text-shadow: -0.0075em 0.0075em 0 #0e0808, 0.005em 0.005em 0 #5e3737, 0.01em 0.01em 0 #593434, 0.015em 0.015em #543232, 0.02em 0.02em 0 #502f2f, 0.025em 0.025em 0 #4b2c2c, 0.03em 0.03em 0 #462929, 0.035em 0.035em 0 #422727;
 }
 
 h2 {
-  font-size: 6rem;
-  color: #ea8a8a;
+  font-size: 7rem;
+  color: white;
+  font-family: "Corinthia", cursive;
 }
 
 .underbar {
@@ -331,6 +332,7 @@ a:hover, a:focus {
 i {
   font-size: 60px;
   padding: 10px;
+  color: #B0AF7E;
 }
 
 footer {
@@ -348,9 +350,12 @@ header .wrapper {
   margin: 0 auto;
   width: 80%;
 }
+header .wrapper .fa-ellipsis-h {
+  display: none;
+}
 header nav {
   background-color: #2C2C2C;
-  height: 10vh;
+  height: 90px;
 }
 header nav div {
   text-align: center;
@@ -401,6 +406,10 @@ header .firstPage ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+header .firstPage .logos i:hover,
+header .firstPage .logos i:focus {
+  color: white;
 }
 header button {
   border: none;
@@ -460,8 +469,12 @@ header button i {
   background-position: top;
   background-size: cover;
   margin-bottom: 50px;
-  border: #ea8a8a 5px solid;
+  border: #fb607f 5px solid;
   border-radius: 10px;
+}
+.about p {
+  font-size: 2rem;
+  line-height: 1.9;
 }
 
 .char {
@@ -524,12 +537,13 @@ header button i {
 }
 .skills .skillIcons i:hover,
 .skills .skillIcons i:focus {
-  color: #ea8a8a;
+  color: #fb607f;
 }
 
 .wrapperWork {
   width: 80%;
   margin: 0 auto;
+  overflow-x: hidden;
   height: 100%;
 }
 

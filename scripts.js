@@ -1,19 +1,21 @@
 
 functionality = {}
 
-functionality.onSubmit = function () {
 
+//adding an event listener on the form to send an email
+functionality.onSubmit = function () {
     const formEl = document.querySelector('form')
     formEl.addEventListener('submit', function (event) {
         event.preventDefault();
-        let name = document.querySelector('.fullName').value
-        let email = document.querySelector('.email').value
-        let message = document.querySelector('.message').value
+        const name = document.querySelector('.fullName').value
+        const email = document.querySelector('.email').value
+        const message = document.querySelector('.message').value
         formEl.reset()
         sendEmail(name, email, message)
     })
 }
 
+//sending email function 
 function sendEmail(name, email, message) {
     Email.send({
         Host: 'smtp.gmail.com',
@@ -23,9 +25,15 @@ function sendEmail(name, email, message) {
         From: 'paria340@gmail.com',
         Subject: `${name} sent you a message`,
         Body: `Name ${name} Email: ${email} Message: ${message}`
-    }).then((message) => alert('the mail has been sent'))
+    }).then((message) => {
+        const sendConfirm = document.querySelector('.sendConfirm')
+        const sendConfirmParagraph = document.createElement('p')
+        sendConfirmParagraph.innerHTML = 'Email has been sent!'
+        sendConfirm.append(sendConfirmParagraph)
+    })
 }
 
+//button to go to ABOUT section from home page
 functionality.scroll = function () {
     const button = document.querySelector('.arrow')
     button.addEventListener('click', function () {
@@ -34,6 +42,7 @@ functionality.scroll = function () {
     });
 }
 
+//animation on ABOUT section
 functionality.paragraphAnimation = function () {
     let text = document.getElementById('text');
     let newDom = '';
@@ -50,27 +59,34 @@ functionality.paragraphAnimation = function () {
     }
 
 }
-// let widnowWidth = window.innerWidth
-// let limit = 500
-// if(widnowWidth > limit){
-    function reveal() {
-        let revealerpoint = 150;
-        let revealers = document.querySelectorAll('.revealer');
-        for (let i = 0; i < revealers.length; i++) {
-            let windowheight = window.innerHeight;
-            let revealertop = revealers[i].getBoundingClientRect().top;
-            // let revealerbottom = revealers[i].getBoundingClientRect().bottom;
-            if (revealertop < windowheight - revealerpoint) {
-                revealers[i].classList.add('active')
-            } else {
-                revealers[i].classList.remove('active')
-            }
-        } 
-    }
+
+
+//burger menu in mobile design
+// functionality.burgerMenu = function() {
+//     const menu = document.querySelector('.fa-ellipsis-h')
+//     menu.addEventListener('click', function () {
+//         const li = document.querySelector('.wrapper div')
+//         li.style.display = ('inherit')
+//     })
 // }
 
+//animtion on work section 
+function reveal() {
+    let revealerpoint = 150;
+    let revealers = document.querySelectorAll('.revealer');
+    for (let i = 0; i < revealers.length; i++) {
+        let windowheight = window.innerHeight;
+        let revealertop = revealers[i].getBoundingClientRect().top;
+        if (revealertop < windowheight - revealerpoint) {
+            revealers[i].classList.add('active')
+        } else {
+            revealers[i].classList.remove('active')
+        }
+    } 
+}
 
 
+//button to go to HOME(top of the) page
 functionality.toTop = function() {
     const buttonEl = document.querySelector('.toTop')
     buttonEl.addEventListener('click', function() {
@@ -85,6 +101,7 @@ functionality.init = function () {
     functionality.paragraphAnimation()
     window.addEventListener('scroll', reveal)
     functionality.toTop()
+    functionality.burgerMenu()
 }
 
 functionality.init()

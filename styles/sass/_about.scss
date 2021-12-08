@@ -1,5 +1,5 @@
 $greenColor:#B0AF7E;
-$pinkColor: #ea8a8a;
+$pinkColor: #fb607f;
 
 .wrapperAbout{
     width: 80%;
@@ -15,6 +15,10 @@ $pinkColor: #ea8a8a;
         margin-bottom: 50px;
         border: $pinkColor 5px solid;
         border-radius: 10px;
+    }
+    p{
+        font-size: 2rem;
+        line-height: 1.9;
     }
 }
 
@@ -59,4 +63,5 @@ $pinkColor: #ea8a8a;
         }
     }
 }
+
 

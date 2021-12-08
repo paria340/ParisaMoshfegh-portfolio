@@ -5,14 +5,12 @@ $pinkColor: #ea8a8a;
 .wrapperWork{
     width: 80%;
     margin: 0 auto;
-    // overflow-x: hidden;
-    // height: auto;
+    overflow-x: hidden;
     height: 100%;
 }
 
 .workContainer{
     display: flex;
-    // height: 100%;
     min-height: 1px;
     margin-bottom: 35%;
     a{
