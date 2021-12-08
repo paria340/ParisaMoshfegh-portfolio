@@ -33,42 +33,60 @@ function sendEmail(name, email, message) {
     })
 }
 
+//animation on ABOUT section picture using gsap library
+functionality.pictureAnime = function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let revealContainers = document.querySelectorAll(".reveal");
+
+    revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: container,
+                toggleActions: "restart none none reset"
+            }
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+            xPercent: -100,
+            ease: Power2.out
+        });
+        tl.from(image, 1.5, {
+            xPercent: 100,
+            scale: 1.3,
+            delay: -1.5,
+            ease: Power2.out
+        });
+    });
+}
+
 //button to go to ABOUT section from home page
 functionality.scroll = function () {
     const button = document.querySelector('.arrow')
     button.addEventListener('click', function () {
-        window.scroll({top: 1000, left: 0, behavior: 'smooth'});
-        functionality.paragraphAnimation()
+        window.scroll({ top: 1000, left: 0, behavior: 'smooth' });
+        functionality.pictureAnime()
     });
 }
 
-//animation on ABOUT section
-functionality.paragraphAnimation = function () {
-    let text = document.getElementById('text');
-    let newDom = '';
-    const animationDelay = 6;
-    for(let i = 0; i < text.innerText.length; i++)
-    {
-        newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-    }
-    text.innerHTML = newDom;
-    let length = text.children.length;
-    for(let i = 0; i < length; i++)
-    {
-        text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-    }
-
-}
-
-
 //burger menu in mobile design
-// functionality.burgerMenu = function() {
-//     const menu = document.querySelector('.fa-ellipsis-h')
-//     menu.addEventListener('click', function () {
-//         const li = document.querySelector('.wrapper div')
-//         li.style.display = ('inherit')
-//     })
-// }
+document.onreadystatechange = function () {
+    if (document.readyState == "interactive") {
+        let displayMenu = false
+        const menu = document.querySelector('.fa-bars')
+        menu.addEventListener('click', function () {
+            displayMenu = !displayMenu
+            const menuOption = document.querySelector('header .wrapper')
+            if(displayMenu){
+                menuOption.classList.add('open')
+            }else{
+                menuOption.classList.remove('open')
+            }
+        })
+    }
+}
 
 //animtion on work section 
 function reveal() {
@@ -82,15 +100,15 @@ function reveal() {
         } else {
             revealers[i].classList.remove('active')
         }
-    } 
+    }
 }
 
 
 //button to go to HOME(top of the) page
-functionality.toTop = function() {
+functionality.toTop = function () {
     const buttonEl = document.querySelector('.toTop')
-    buttonEl.addEventListener('click', function() {
-        window.scrollTo({top: 0, behavior: "smooth"});
+    buttonEl.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     })
 }
 
@@ -98,10 +116,10 @@ functionality.toTop = function() {
 functionality.init = function () {
     functionality.onSubmit()
     functionality.scroll()
-    functionality.paragraphAnimation()
+    functionality.pictureAnime()
     window.addEventListener('scroll', reveal)
     functionality.toTop()
-    functionality.burgerMenu()
+    // functionality.burgerMenu()
 }
 
 functionality.init()

@@ -350,14 +350,14 @@ header .wrapper {
   margin: 0 auto;
   width: 80%;
 }
-header .wrapper .fa-ellipsis-h {
+header .fa-bars {
   display: none;
 }
 header nav {
   background-color: #2C2C2C;
   height: 90px;
 }
-header nav div {
+header nav li {
   text-align: center;
 }
 header nav ul {
@@ -366,7 +366,7 @@ header nav ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 header nav p {
   padding-top: 5px;
@@ -465,49 +465,21 @@ header button i {
 
 .about .myPic {
   height: 50vh;
-  background-image: url(../images/me.JPG);
-  background-position: top;
-  background-size: cover;
   margin-bottom: 50px;
   border: #fb607f 5px solid;
   border-radius: 10px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .about p {
   font-size: 2rem;
   line-height: 1.9;
 }
 
-.char {
-  -webkit-animation: an 1s ease-out 1 both;
-          animation: an 1s ease-out 1 both;
-  display: inline-block;
-}
-
-@-webkit-keyframes an {
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(500px) translate3d(0, 0, 0);
-            transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
-
-@keyframes an {
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(500px) translate3d(0, 0, 0);
-            transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
 .skills {
   width: 80%;
   margin: 0 auto;
@@ -793,5 +765,47 @@ button {
 
   a {
     font-size: 1.2rem;
+  }
+
+  header .wrapper {
+    display: none;
+  }
+
+  header .wrapper.open {
+    background: rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+  }
+  header .wrapper.open li p {
+    visibility: hidden;
+  }
+  header .wrapper.open li a {
+    font-size: 5rem;
+  }
+
+  header .wrapper .fa-bars {
+    display: inherit;
+    font-size: 60px;
+  }
+
+  header nav {
+    height: 80px;
+  }
+
+  header .fa-bars {
+    display: inherit;
+  }
+
+  .about .myPic {
+    height: auto;
   }
 }

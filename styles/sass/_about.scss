@@ -9,32 +9,18 @@ $pinkColor: #fb607f;
 .about{
     .myPic{
         height: 50vh;
-        background-image: url(../images/me.JPG);
-        background-position: top;
-        background-size: cover;
         margin-bottom: 50px;
         border: $pinkColor 5px solid;
         border-radius: 10px;
+        overflow: hidden;
+        object-fit: cover;
+        visibility: hidden;
+        position: relative;
+        overflow: hidden;
     }
     p{
         font-size: 2rem;
         line-height: 1.9;
-    }
-}
-
-.char{
-    animation: an 1s ease-out 1 both;
-    display: inline-block;
-}
-
-@keyframes an{
-    from{
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    }
-    to{
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
 

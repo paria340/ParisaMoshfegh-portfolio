@@ -53,10 +53,35 @@
     a{
         font-size: 1.2rem;
     }
-    // .wrapper div{
-    //     display: none;
-    // }
-    // header .wrapper .fa-ellipsis-h{
-    //     display: inherit;
-    // }
+    header .wrapper {
+        display: none;
+    }
+    header .wrapper.open{
+        background: rgba(0,0,0,0.4);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        li p {
+            visibility: hidden;
+        }
+        li a{
+            font-size: 5rem;
+        }
+    }
+    header .wrapper .fa-bars{
+        display: inherit;
+        font-size: 60px;
+    }
+    header nav{
+        height: 80px;
+    }
+    header .fa-bars{
+        display: inherit;
+    }
+    .about .myPic{
+        height: auto;
+    }
 }
