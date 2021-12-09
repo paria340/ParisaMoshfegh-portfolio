@@ -1,8 +1,8 @@
 
-functionality = {}
+portfolioApp = {}
 
 //adding an event listener on the form to send an email
-functionality.onSubmit = function () {
+portfolioApp.onSubmit = function () {
     const formEl = document.querySelector('form')
     formEl.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -33,7 +33,7 @@ function sendEmail(name, email, message) {
 }
 
 //animation on ABOUT section picture using gsap library
-functionality.pictureAnime = function () {
+portfolioApp.pictureAnime = function () {
     gsap.registerPlugin(ScrollTrigger);
     let revealContainers = document.querySelectorAll(".reveal");
     revealContainers.forEach((container) => {
@@ -59,11 +59,11 @@ functionality.pictureAnime = function () {
 }
 
 //button to go to ABOUT section from home page
-functionality.scroll = function () {
+portfolioApp.scroll = function () {
     const button = document.querySelector('.arrow')
     button.addEventListener('click', function () {
         window.scroll({ top: 1000, left: 0, behavior: 'smooth' });
-        functionality.pictureAnime()
+        portfolioApp.pictureAnime()
     });
 }
 
@@ -73,7 +73,7 @@ document.onreadystatechange = function () {
         let displayMenu = false
         const menu = document.querySelector('.fa-bars')
         const menuOption = document.querySelector('header .wrapper')
-        const menuOptionLi = document.querySelector('header .wrapper li a')
+        // const menuOptionLi = document.querySelector('header .wrapper li')
         menu.addEventListener('click', function () {
             displayMenu = !displayMenu
             if(displayMenu){
@@ -81,12 +81,12 @@ document.onreadystatechange = function () {
             }else{
                 menuOption.classList.remove('open')
             }
-        })
-        
-        menuOptionLi.addEventListener('click', function (event) {
-            console.log(event)
-            displayMenu = !displayMenu
-            menuOption.classList.remove('open')
+        })       
+        menuOption.addEventListener('click', function (event) {
+            if(event.target.tagName === 'A'){
+                displayMenu = !displayMenu
+                menuOption.classList.remove('open')
+            }
         })
     }
 }
@@ -108,7 +108,7 @@ function reveal() {
 
 
 //button to go to HOME(top of the) page
-functionality.toTop = function () {
+portfolioApp.toTop = function () {
     const buttonEl = document.querySelector('.toTop')
     buttonEl.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -116,15 +116,14 @@ functionality.toTop = function () {
 }
 
 
-functionality.init = function () {
-    functionality.onSubmit()
-    functionality.scroll()
-    functionality.pictureAnime()
+portfolioApp.init = function () {
+    portfolioApp.onSubmit()
+    portfolioApp.scroll()
+    portfolioApp.pictureAnime()
     window.addEventListener('scroll', reveal)
-    functionality.toTop()
-    // functionality.burgerMenu()
+    portfolioApp.toTop()
 }
 
-functionality.init()
+portfolioApp.init()
 
 
