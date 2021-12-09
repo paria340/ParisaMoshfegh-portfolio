@@ -411,6 +411,16 @@ header .firstPage .logos i:hover,
 header .firstPage .logos i:focus {
   color: white;
 }
+header .firstPage .resume {
+  position: fixed;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-transform: uppercase;
+  background-color: #ea8a8a;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
 header button {
   border: none;
   background: none;
@@ -740,6 +750,10 @@ button {
 .paragraphRight {
     margin-top: 50%;
   }
+
+  .email p {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 480px) {
   header button {
@@ -756,11 +770,14 @@ button {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
+    width: 60%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   a {
@@ -772,7 +789,7 @@ button {
   }
 
   header .wrapper.open {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -783,7 +800,7 @@ button {
     position: relative;
     z-index: 10;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
   }
   header .wrapper.open li p {
     display: none;
@@ -792,20 +809,23 @@ button {
     font-size: 5rem;
   }
 
-  header .wrapper .fa-bars {
-    display: inherit;
-    font-size: 60px;
-  }
-
-  header nav {
-    height: 80px;
+  header i {
+    font-size: 40px;
   }
 
   header .fa-bars {
     display: inherit;
   }
 
+  header nav {
+    height: 70px;
+  }
+
   .about .myPic {
     height: auto;
+  }
+
+  header .firstPage .resume {
+    position: absolute;
   }
 }

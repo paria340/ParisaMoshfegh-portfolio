@@ -30,6 +30,9 @@
     .paragraphRight{
         margin-top: 50%;
     }
+    .email p{
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -45,10 +48,12 @@
         margin-top: 50%;
     }
     h1{
-        font-size: 6rem;
+        font-size: 5rem;
+        width: 60%;
+        align-self: center;
     }
     h2{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     a{
         font-size: 1.2rem;
@@ -57,13 +62,13 @@
         display: none;
     }
     header .wrapper.open{
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.8);
         display: flex;
         flex-direction: column;
         position: relative;
         z-index: 10;
         width: 100vw;
-        height: 80vh;
+        height: 90vh;
         li p {
             display: none;
         }
@@ -71,17 +76,19 @@
             font-size: 5rem;
         }
     }
-    header .wrapper .fa-bars{
-        display: inherit;
-        font-size: 60px;
-    }
-    header nav{
-        height: 80px;
+    header i{
+        font-size: 40px;
     }
     header .fa-bars{
         display: inherit;
     }
+    header nav{
+        height: 70px;
+    }
     .about .myPic{
         height: auto;
+    }
+    header .firstPage .resume{
+        position: absolute;
     }
 }

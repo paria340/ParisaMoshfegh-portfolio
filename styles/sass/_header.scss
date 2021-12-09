@@ -1,4 +1,5 @@
 $blackColor: #2C2C2C;
+$pinkColor: #ea8a8a;
 
 header{
     .wrapper{
@@ -6,10 +7,6 @@ header{
         margin: 0 auto;
         width: 80%;
     }
-    // .wrapper.open{
-    //     display: flex;
-    //     z-index: 10;
-    // }
     .fa-bars{
         display: none;
     }
@@ -57,6 +54,15 @@ header{
                 color: white;
             }
 
+        }
+        .resume{
+            position: fixed;
+            transform: rotate(90deg);
+            text-transform: uppercase;
+            background-color: $pinkColor;
+            padding: 10px;
+            border-radius: 5px;
+            color: black;
         }
     }
     button{

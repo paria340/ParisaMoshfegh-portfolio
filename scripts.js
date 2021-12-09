@@ -4,6 +4,7 @@ portfolioApp = {}
 //adding an event listener on the form to send an email
 portfolioApp.onSubmit = function () {
     const formEl = document.querySelector('form')
+    //adding an event listner to form so on submit it would call the function send email 
     formEl.addEventListener('submit', function (event) {
         event.preventDefault();
         const name = document.querySelector('.fullName').value
@@ -15,7 +16,7 @@ portfolioApp.onSubmit = function () {
 }
 
 //sending email function 
-function sendEmail(name, email, message) {
+function sendEmail(name, email, message)  {
     Email.send({
         Host: 'smtp.gmail.com',
         Username: 'paria340@gmail.com',
@@ -63,7 +64,6 @@ portfolioApp.scroll = function () {
     const button = document.querySelector('.arrow')
     button.addEventListener('click', function () {
         window.scroll({ top: 1000, left: 0, behavior: 'smooth' });
-        portfolioApp.pictureAnime()
     });
 }
 
@@ -73,7 +73,6 @@ document.onreadystatechange = function () {
         let displayMenu = false
         const menu = document.querySelector('.fa-bars')
         const menuOption = document.querySelector('header .wrapper')
-        // const menuOptionLi = document.querySelector('header .wrapper li')
         menu.addEventListener('click', function () {
             displayMenu = !displayMenu
             if(displayMenu){
@@ -125,5 +124,7 @@ portfolioApp.init = function () {
 }
 
 portfolioApp.init()
+
+
 
 
