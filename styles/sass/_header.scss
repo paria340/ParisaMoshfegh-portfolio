@@ -1,5 +1,6 @@
 $blackColor: #2C2C2C;
 $pinkColor: #ea8a8a;
+$greenColor:#B0AF7E;
 
 header{
     .wrapper{
@@ -53,7 +54,6 @@ header{
             i:focus{
                 color: white;
             }
-
         }
         .resume{
             position: fixed;
@@ -63,6 +63,10 @@ header{
             padding: 10px;
             border-radius: 5px;
             color: black;
+            &:hover,
+            &:focus{
+                background-color: $greenColor;
+            }
         }
     }
     button{
@@ -84,6 +88,9 @@ header{
     display: flex;
     justify-content: center;
     animation: arrow 4s infinite;
+    &:focus{
+        width: 120px;
+    }
 }
 
 @keyframes arrow {

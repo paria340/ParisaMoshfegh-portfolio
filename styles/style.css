@@ -334,6 +334,9 @@ i {
   padding: 10px;
   color: #B0AF7E;
 }
+i:focus {
+  color: white;
+}
 
 footer {
   width: 80%;
@@ -421,6 +424,9 @@ header .firstPage .resume {
   border-radius: 5px;
   color: black;
 }
+header .firstPage .resume:hover, header .firstPage .resume:focus {
+  background-color: #B0AF7E;
+}
 header button {
   border: none;
   background: none;
@@ -445,6 +451,9 @@ header button i {
           justify-content: center;
   -webkit-animation: arrow 4s infinite;
           animation: arrow 4s infinite;
+}
+.toTop:focus {
+  width: 120px;
 }
 
 @-webkit-keyframes arrow {
@@ -494,22 +503,9 @@ header button i {
   width: 80%;
   margin: 0 auto;
 }
-.skills ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-.skills ul li i {
-  font-size: 60px;
-  padding: 10px;
-  color: #B0AF7E;
-}
 .skills .skillIcons {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   -webkit-column-gap: 1%;
@@ -517,8 +513,12 @@ header button i {
           column-gap: 1%;
   row-gap: 0.2%;
 }
-.skills .skillIcons i:hover,
-.skills .skillIcons i:focus {
+.skills .skillIcons li i {
+  font-size: 60px;
+  padding: 10px;
+  color: #B0AF7E;
+}
+.skills .skillIcons li i:hover, .skills .skillIcons li i:focus {
   color: #fb607f;
 }
 
@@ -540,6 +540,9 @@ header button i {
   font-size: 1.7rem;
   padding-right: 10px;
   color: #B0AF7E;
+}
+.workContainer a:hover, .workContainer a:focus {
+  color: white;
 }
 .workContainer i {
   font-size: 30px;
@@ -670,6 +673,11 @@ textarea {
   color: white;
   font-size: 2rem;
 }
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border: 2px solid #ea8a8a;
+}
 
 .info {
   margin-left: 20px;
@@ -702,6 +710,12 @@ button {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+button:hover, button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 1240px) {

@@ -1,5 +1,6 @@
 $greenColor: #B0AF7E;
 $darkGrey: rgb(88,88,88);
+$pinkColor: #ea8a8a;
 
 .contactWrapper{
     width: 80%;
@@ -29,6 +30,9 @@ input[type=email],
 textarea {
     color: white;
     font-size: 2rem;
+    &:focus{
+        border: 2px solid $pinkColor;
+    }
 }
 .info{
     margin-left: 20px;
@@ -56,4 +60,9 @@ button{
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100px;
+    transition: all 0.3s linear;
+    &:hover,
+    &:focus{
+        transform: scale(1.1);
+    }
 }

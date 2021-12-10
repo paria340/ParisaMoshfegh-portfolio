@@ -112,6 +112,9 @@ i{
     font-size: 60px;
     padding: 10px;
     color: $greenColor;
+    &:focus{
+        color: white;
+    }
 }
 
 footer{

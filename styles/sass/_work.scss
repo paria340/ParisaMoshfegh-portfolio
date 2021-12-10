@@ -17,6 +17,10 @@ $pinkColor: #ea8a8a;
         font-size: 1.7rem;
         padding-right: 10px;
         color: $greenColor;
+        &:hover,
+        &:focus{
+            color: white;
+        }
     }
     i{
         font-size: 30px;
@@ -54,7 +58,6 @@ $pinkColor: #ea8a8a;
 .revealme.fromleft {
     position: absolute;
     left: -100%;
-
 }
   
 .active .revealme.fromleft {

@@ -27,25 +27,21 @@ $pinkColor: #fb607f;
 .skills{
     width: 80%;
     margin: 0 auto;
-    ul{
-        display: flex;
-        justify-content: center;    
-        text-align: center;       
-        li i{
-            font-size: 60px;
-            padding: 10px;
-            color: $greenColor;
-        }
-    }
     .skillIcons{  
         display: grid;
+        text-align: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         column-gap: 1%;
         row-gap: 0.2%;
-        i:hover,
-        i:focus{
-            color: $pinkColor;
+        li i{
+            font-size: 60px;
+            padding: 10px;
+            color: $greenColor;
+            &:hover,
+            &:focus{
+                color: $pinkColor;
+            }
         }
     }
 }
