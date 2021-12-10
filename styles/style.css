@@ -538,15 +538,18 @@ header button i {
 }
 .workContainer a {
   font-size: 1.7rem;
-  padding-right: 10px;
-  color: #B0AF7E;
+  padding: 10px;
+  text-transform: uppercase;
+  color: black;
+  background-color: #ea8a8a;
+  border-radius: 5px;
 }
 .workContainer a:hover, .workContainer a:focus {
   color: white;
 }
 .workContainer i {
   font-size: 30px;
-  color: #ea8a8a;
+  color: #B0AF7E;
   margin-top: 10px;
 }
 
@@ -610,7 +613,7 @@ header button i {
 .paragraphRight p,
 .paragraphLeft p {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .imgContainer img {
@@ -841,5 +844,9 @@ button:hover, button:focus {
 
   header .firstPage .resume {
     position: absolute;
+  }
+
+  .info {
+    margin-left: 0;
   }
 }

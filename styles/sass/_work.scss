@@ -15,8 +15,12 @@ $pinkColor: #ea8a8a;
     margin-bottom: 35%;
     a{
         font-size: 1.7rem;
-        padding-right: 10px;
-        color: $greenColor;
+        padding: 10px;
+        text-transform: uppercase;
+        color: black;
+        background-color: $pinkColor;
+        border-radius: 5px;
+       
         &:hover,
         &:focus{
             color: white;
@@ -24,7 +28,7 @@ $pinkColor: #ea8a8a;
     }
     i{
         font-size: 30px;
-        color: $pinkColor;
+        color: $greenColor;
         margin-top: 10px;
     }
 }
@@ -90,7 +94,7 @@ $pinkColor: #ea8a8a;
 .paragraphRight p,
 .paragraphLeft p{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .imgContainer img{
