@@ -30,6 +30,7 @@ input[type=email],
 textarea {
     color: white;
     font-size: 2rem;
+    padding-left: 10px;
     &:focus{
         border: 2px solid $pinkColor;
     }
@@ -41,7 +42,6 @@ textarea{
     background-color: $darkGrey;
     padding-top: 10px;
     margin-bottom: 10px;
-    padding-left: 10px;
     border: none;
     resize: none;
 }

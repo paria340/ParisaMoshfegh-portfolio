@@ -259,10 +259,10 @@ img {
 }
 
 h1 {
-  color: #d5526c;
+  color: #262626;
   font-size: 7rem;
   font-weight: 900;
-  text-shadow: -0.0075em 0.0075em 0 #0e0808, 0.005em 0.005em 0 #5e3737, 0.01em 0.01em 0 #593434, 0.015em 0.015em #543232, 0.02em 0.02em 0 #502f2f, 0.025em 0.025em 0 #4b2c2c, 0.03em 0.03em 0 #462929, 0.035em 0.035em 0 #422727;
+  text-shadow: -0.0075em 0.0075em 0 #0f0f0f, 0.005em 0.005em 0 #666666, 0.01em 0.01em 0 #616161, 0.015em 0.015em #5c5c5c, 0.02em 0.02em 0 #575757, 0.025em 0.025em 0 #525252, 0.03em 0.03em 0 #4d4d4d, 0.035em 0.035em 0 #474747;
 }
 
 h2 {
@@ -377,7 +377,7 @@ header nav p {
   font-size: 1.1rem;
 }
 header .firstPage {
-  background-image: url(../images/mountain.JPG);
+  background-image: url(../images/try1.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -550,7 +550,7 @@ header button i {
 .workContainer i {
   font-size: 30px;
   color: #B0AF7E;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .imgContainer {
@@ -675,6 +675,7 @@ input[type=email],
 textarea {
   color: white;
   font-size: 2rem;
+  padding-left: 10px;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -690,7 +691,6 @@ textarea {
   background-color: #585858;
   padding-top: 10px;
   margin-bottom: 10px;
-  padding-left: 10px;
   border: none;
   resize: none;
 }
@@ -771,6 +771,10 @@ button:hover, button:focus {
   .email p {
     margin-bottom: 20px;
   }
+
+  .info {
+    margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   header button {
@@ -844,9 +848,5 @@ button:hover, button:focus {
 
   header .firstPage .resume {
     position: absolute;
-  }
-
-  .info {
-    margin-left: 0;
   }
 }
