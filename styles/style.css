@@ -436,7 +436,7 @@ header button {
   cursor: pointer;
 }
 header button i {
-  color: #454411;
+  color: #ea8a8a;
   -webkit-animation: arrow 4s infinite;
           animation: arrow 4s infinite;
 }
