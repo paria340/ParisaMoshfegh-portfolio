@@ -50,6 +50,13 @@
     .paragraphRight{
         margin-top: 50%;
     }
+    .paragraphLeft p,
+    .paragraphRight p{
+        direction: ltr;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-left: 10px;
+    }
     h1{
         font-size: 5rem;
         width: 60%;
@@ -90,6 +97,10 @@
     }
     .about .myPic{
         height: auto;
+    }
+    .about p{
+        text-align: justify;
+        text-justify: inter-word;
     }
     header .firstPage .resume{
         position: absolute;
