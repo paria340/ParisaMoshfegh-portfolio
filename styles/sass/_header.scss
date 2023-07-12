@@ -1,9 +1,28 @@
 $blackColor: #2C2C2C;
-$pinkColor: #ea8a8a;
-$greenColor:#B0AF7E;
+$pinkColor: #FBACBE;
+$greenColor:#A18276;
 
-header{
-    .wrapper{
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    }
+
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    .wrapper {
         max-width: 2000px;
         margin: 0 auto;
         width: 80%;
@@ -11,51 +30,45 @@ header{
     .fa-bars{
         display: none;
     }
-    nav{
-        background-color: $blackColor;
-        height: 90px;
-        li{
+    nav {
+        height: 40px;
+
+        li {
             text-align: center;
         }
-        ul{
+
+        ul {
             display: flex;
             justify-content: space-around;
             padding-top: 10px;
         }
-        p{
+
+        p {
             padding-top: 5px;
             padding-bottom: 5px;
             font-size: 1.1rem;
         }
     }
-    .firstPage{
-        background-image: url(../images/try1.JPG);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 90vh;
+    .firstPage {
+        height: 80vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         position: relative;
-        img{
-            width: 150px;
-            height: 150px;
-            align-self: center;
-            margin-bottom: 30px;            
-        }
-        ul{
+
+        ul {
             display: flex;
             justify-content: center;
         }
-        .logos{
+
+        .logos {
             i:hover,
-            i:focus{
+            i:focus {
                 color: white;
             }
         }
-        .resume{
+        .resume {
             position: fixed;
             transform: rotate(90deg);
             text-transform: uppercase;
@@ -64,21 +77,9 @@ header{
             border-radius: 5px;
             color: black;
             &:hover,
-            &:focus{
+            &:focus {
                 background-color: $greenColor;
             }
-        }
-    }
-    button{
-        border: none;
-        background: none;
-        position: absolute;
-        left: 48%;
-        bottom: 8%;
-        cursor: pointer;
-        i{
-            color: $pinkColor;
-            animation: arrow 4s infinite;
         }
     }
 }
@@ -92,13 +93,3 @@ header{
         width: 120px;
     }
 }
-
-@keyframes arrow {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
-}
-

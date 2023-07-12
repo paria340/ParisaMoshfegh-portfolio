@@ -2,17 +2,16 @@
 $greenColor:#B0AF7E;
 $pinkColor: #ea8a8a;
 
-.wrapperWork{
+.wrapperWork {
     width: 80%;
     margin: 0 auto;
     overflow-x: hidden;
-    height: 100%;
 }
 
-.workContainer{
+.workContainer {
     display: flex;
     min-height: 1px;
-    margin-bottom: 35%;
+    margin-bottom: 20px;
     a{
         font-size: 1.7rem;
         padding: 10px;
@@ -33,71 +32,28 @@ $pinkColor: #ea8a8a;
     }
 }
 
-.imgContainer{
+.imgContainer {
     position: relative;
     width: 50%;
 }
 
-.paragraphRight{
-    margin: auto;
+.paragraphRight {
     padding-left: 30px;
     width: 50%;
 }
 
-.revealer {
-    position: relative;
-}
-
-.revealme {
-    -webkit-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
-    opacity: 0;
-}
-  
-.active .revealme {
-    opacity: 1;
-}
-  
-.revealme.fromleft {
-    position: absolute;
-    left: -100%;
-}
-  
-.active .revealme.fromleft {
-    opacity: 1;
-    left: 2%;
-    .overlay{
-        margin-left: 0;
-    }
-}
-  
-.revealme.fromright {
-    position: absolute;
-    right: -100%;
-}
-  
-.active .revealme.fromright {
-    opacity: 1;
-    right: 2%;
-    img{
-        margin-left: 30px;
-    }
-}
-
-.paragraphLeft{
-    margin: auto;
+.paragraphLeft {
     width: 50%;
     padding-right: 30px;
 }
 
 .paragraphRight p,
-.paragraphLeft p{
+.paragraphLeft p {
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
-.imgContainer img{
+.imgContainer img {
     width: 90%;
 }
 

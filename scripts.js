@@ -59,14 +59,6 @@ portfolioApp.pictureAnime = function () {
     });
 }
 
-//button to go to ABOUT section from home page
-portfolioApp.scroll = function () {
-    const button = document.querySelector('.arrow')
-    button.addEventListener('click', function () {
-        window.scroll({ top: 1000, left: 0, behavior: 'smooth' });
-    });
-}
-
 //burger menu in mobile design
 document.onreadystatechange = function () {
     if (document.readyState == "interactive") {
@@ -106,18 +98,8 @@ function reveal() {
 }
 
 
-//button to go to HOME(top of the) page
-portfolioApp.toTop = function () {
-    const buttonEl = document.querySelector('.toTop')
-    buttonEl.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    })
-}
-
-
 portfolioApp.init = function () {
     portfolioApp.onSubmit()
-    portfolioApp.scroll()
     portfolioApp.pictureAnime()
     window.addEventListener('scroll', reveal)
     portfolioApp.toTop()

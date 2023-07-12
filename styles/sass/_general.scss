@@ -11,18 +11,18 @@ h2,
 h3,
 h4,
 h5,
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
-    font-family: $baseFont;
+    font-family: 'Lato', sans-serif;
     background-color: $blackColor;
 }
 
-img{
+img {
     width: 100%;
     display: block;
 }
@@ -43,13 +43,13 @@ h1 {
 }
 
 
-h2{
+h2 {
     font-size: 7rem;
     color: white;
     font-family: 'Corinthia', cursive;
 }
 
-.underbar{
+.underbar {
     width: 0;
     height: 5px;
     background: rgba(100,100,200,0);
@@ -58,7 +58,7 @@ h2{
     transition: all ease 0.5s;
 }
 
-h3{
+h3 {
     font-size: 6rem;
     color: $greenColor;
     text-align: center;
@@ -71,7 +71,7 @@ h3{
     }
 }
 
-h4{
+h4 {
     color: white;
     font-size: 3rem;
     &:hover,
@@ -80,49 +80,49 @@ h4{
     }
 }
 
-h5{
-    color:$pinkColor;
+h5 {
+    color:black;
     font-size: 2rem;
     margin-bottom: 5px;
     margin-top: 10px;
     margin-right: 20px;
 }
 
-p{
+p {
     color: white;
     font-size: 1.8rem;
     line-height: 1.5;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
     &:hover,
     &:focus{
-        color:$greenColor;
+        color:#23A6D5;
     }
 }
 
-i{
+i {
     font-size: 60px;
     padding: 10px;
-    color: $greenColor;
+    color: #F7F4F3;
     &:focus{
         color: white;
     }
 }
 
-footer{
+footer {
     width: 80%;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 40px;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     border-top: solid 1px black;
     padding-top: 20px;
 }

@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <script src="https://kit.fontawesome.com/8ddd0c5769.js" crossorigin="anonymous"></script>
-    <title>Parisa's Portfolio</title>
 </head>
 
 <body>
@@ -43,36 +43,41 @@
                     </li>
                 </ul>
             </nav>
-            <div class="firstPage" id="home">
-                <h1>Parisa Moshfegh</h1>
-                <h2>Software Developer</h2>
-                <div class="logos">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/parisa-moshfegh/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/paria340">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/parisa.moshfegh/">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/paria340?tab=repositories">
-                                <i class="fab fa-github-square"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <a class="resume" href="./images/Parisa_Moshfegh_Resume.pdf" download target="_blank">Resume</a>
-            </div>
         </header>
+        <section class="contact contactWrapper" id="contact">
+            <h1>CONTACT ME</h1>
+            <div class="underbar"></div>
+            <form action="mailto:paria340@gmail.com" method='POST'>
+                <div class="inputs">
+                    <label for="fullName"></label>
+                    <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your Name"
+                        required="">
+
+                    <label for="subject"></label>
+                    <input type="text" placeholder="Subject" required="">
+
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Your Email" required="" id="email" class="email">
+                </div>
+                <div class="sendMessage">
+                    <label for="message"></label>
+                    <textarea name="message" class="message" id="message" cols="50" rows="6" required=""
+                        placeholder="Tell me anything I need to hear!"></textarea>
+                    <button type="submit">Send</button>
+                    <div class="sendConfirm"></div>
+                </div>
+                <div class="info">
+                    <div class="phone">
+                        <h5>Phone</h5>
+                        <p>(514)-625-1375</p>
+                    </div>
+                    <div class="email">
+                        <h5>Email</h5>
+                        <p>paria340@gmail.com</p>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Developed by Parisa Moshfegh</p>
