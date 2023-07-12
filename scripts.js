@@ -82,27 +82,9 @@ document.onreadystatechange = function () {
     }
 }
 
-//animtion on work section 
-function reveal() {
-    let revealerpoint = 150;
-    let revealers = document.querySelectorAll('.revealer');
-    for (let i = 0; i < revealers.length; i++) {
-        let windowheight = window.innerHeight;
-        let revealertop = revealers[i].getBoundingClientRect().top;
-        if (revealertop < windowheight - revealerpoint) {
-            revealers[i].classList.add('active')
-        } else {
-            revealers[i].classList.remove('active')
-        }
-    }
-}
-
 
 portfolioApp.init = function () {
     portfolioApp.onSubmit()
-    portfolioApp.pictureAnime()
-    window.addEventListener('scroll', reveal)
-    portfolioApp.toTop()
 }
 
 portfolioApp.init()
