@@ -467,7 +467,7 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
   margin: 0 auto;
 }
 
-.about > div {
+.wrapperAbout .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,14 +475,14 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
       justify-content: space-around;
   gap: 30px;
 }
-.about > div > p {
+.wrapperAbout .about > p {
   max-width: 500px;
 }
-.about img {
+.wrapperAbout img {
   width: 350px;
   border-radius: 5px;
 }
-.about p {
+.wrapperAbout p {
   font-size: 2rem;
   line-height: 1.9;
 }
@@ -809,6 +809,7 @@ button:hover, button:focus {
   }
   header .fa-bars {
     display: inherit;
+    cursor: pointer;
   }
   header nav {
     height: 70px;
@@ -822,5 +823,14 @@ button:hover, button:focus {
   }
   header .firstPage .resume {
     position: absolute;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

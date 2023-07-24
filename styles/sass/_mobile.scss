@@ -1,70 +1,68 @@
 @media (max-width: 1240px){
-    .imgContainer{
+    .imgContainer {
         width: 100%;
     }
     .paragraphRight,
-    .paragraphLeft{
+    .paragraphLeft {
         width: 100%;
         padding-left: 0;
         text-align: center;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .paragraphLeft{
+    .paragraphLeft {
         order: 1;
     }
-    .workContainer{
+    .workContainer {
         flex-direction: column;
     }
-
-    form{
+    form {
         flex-direction: column;
     }
-    .inputs{
+    .inputs {
         width: 100%;
     }
-    .email p{
+    .email p {
         margin-bottom: 20px;
     }
-    .info{
+    .info {
         margin-left: 0;
     }
-
 }
 
 @media(max-width: 480px){
-    header button{
+    header button {
         left: 38%;
     }
-    .workContainer{
+    .workContainer {
         margin-bottom: 600px;
     }
     .paragraphLeft,
-    .paragraphRight{
+    .paragraphRight {
         margin-top: 50%;
     }
     .paragraphLeft p,
-    .paragraphRight p{
+    .paragraphRight p {
         direction: ltr;
         text-align: justify;
         text-justify: inter-word;
         padding-left: 10px;
     }
-    h1{
+    h1 {
         font-size: 5rem;
         width: 60%;
         align-self: center;
     }
-    h2{
+    h2 {
         font-size: 4rem;
     }
-    a{
+    a {
         font-size: 1.2rem;
     }
     header .wrapper {
         display: none;
     }
-    header .wrapper.open{
+    header .wrapper.open {
         background: rgba(0,0,0,0.8);
         display: flex;
         flex-direction: column;
@@ -75,27 +73,32 @@
         li p {
             display: none;
         }
-        li a{
+        li a {
             font-size: 5rem;
         }
     }
-    header i{
+    header i {
         font-size: 40px;
     }
-    header .fa-bars{
+    header .fa-bars {
         display: inherit;
+        cursor: pointer;
     }
-    header nav{
+    header nav {
         height: 70px;
     }
-    .about .myPic{
+    .about .myPic { 
         height: auto;
     }
-    .about p{
+    .about p {
         text-align: justify;
         text-justify: inter-word;
     }
-    header .firstPage .resume{
+    header .firstPage .resume {
         position: absolute;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
     }
 }
