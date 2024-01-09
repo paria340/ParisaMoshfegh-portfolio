@@ -250,7 +250,7 @@ p {
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
 }
 
 img {
@@ -283,7 +283,7 @@ h2 {
 
 h3 {
   font-size: 6rem;
-  color: #B0AF7E;
+  color: #b0af7e;
   text-align: center;
   margin: 100px 0 100px 0;
   text-transform: uppercase;
@@ -299,7 +299,7 @@ h4 {
   font-size: 3rem;
 }
 h4:hover, h4:focus {
-  color: #B0AF7E;
+  color: #b0af7e;
 }
 
 h5 {
@@ -326,16 +326,30 @@ a {
   font-size: 2rem;
 }
 a:hover, a:focus {
-  color: #23A6D5;
+  color: #23a6d5;
 }
 
 i {
   font-size: 60px;
   padding: 10px;
-  color: #F7F4F3;
+  color: #f7f4f3;
 }
 i:focus {
   color: white;
+}
+
+.logos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.logos i {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.logos i:hover,
+.logos i:focus {
+  color: blue;
 }
 
 footer {
@@ -348,12 +362,12 @@ footer {
   padding-top: 20px;
 }
 
-body {
+html {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
-  height: 100vh;
+  background-repeat: repeat;
 }
 
 @-webkit-keyframes gradient {
@@ -429,22 +443,18 @@ header .firstPage ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-header .firstPage .logos i:hover,
-header .firstPage .logos i:focus {
-  color: white;
-}
 header .firstPage .resume {
   position: fixed;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   text-transform: uppercase;
-  background-color: #FBACBE;
+  background-color: #fbacbe;
   padding: 10px;
   border-radius: 5px;
   color: black;
 }
 header .firstPage .resume:hover, header .firstPage .resume:focus {
-  background-color: #A18276;
+  background-color: #a18276;
 }
 
 .toTop {
@@ -465,6 +475,7 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
 .wrapperAbout {
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .wrapperAbout .about {
@@ -487,6 +498,16 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
   line-height: 1.9;
 }
 
+.leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .skills {
   width: 80%;
   margin: 0 auto;
@@ -496,7 +517,7 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
 }
 .skills .cloud {
   width: 350px;
-  height: 120px;
+  height: 160px;
   background: #f2f9fe;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f2f9fe), to(#d6f0fd));
   background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
@@ -505,7 +526,8 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
   margin: 120px auto 20px;
   z-index: 100;
 }
-.skills .cloud:after, .skills .cloud:before {
+.skills .cloud:after,
+.skills .cloud:before {
   content: "";
   position: absolute;
   background: #f2f9fe;
@@ -550,10 +572,6 @@ header .firstPage .resume:hover, header .firstPage .resume:focus {
   margin: 0 auto;
 }
 
-main:has(.wrapperWork) {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-}
-
 .wrapperWork {
   width: 80%;
   margin: 0 auto;
@@ -580,7 +598,7 @@ main:has(.wrapperWork) {
 }
 .workContainer i {
   font-size: 30px;
-  color: #B0AF7E;
+  color: #b0af7e;
   margin-top: 20px;
 }
 
@@ -664,7 +682,7 @@ h1 {
 
 input {
   margin-bottom: 20px;
-  background-color: #EE7752;
+  background-color: #ee7752;
   border: none;
   height: 40px;
   border-radius: 5px;
@@ -687,7 +705,7 @@ textarea {
 }
 
 textarea {
-  background-color: #EE7752;
+  background-color: #ee7752;
   padding-top: 10px;
   margin-bottom: 10px;
   border: none;
@@ -708,7 +726,7 @@ textarea {
 button {
   color: black;
   font-size: 1.8rem;
-  background-color: #F7F4F3;
+  background-color: #f7f4f3;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -718,7 +736,7 @@ button {
   border-radius: 5px;
 }
 button:hover, button:focus {
-  background-color: #EE7752;
+  background-color: #ee7752;
   cursor: pointer;
 }
 
@@ -760,17 +778,44 @@ button:hover, button:focus {
   .info {
     margin-left: 0;
   }
+  header .firstPage .resume {
+    position: inherit;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    background-color: #ea8a8a;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    width: 300px;
+    margin: 10px auto 0 auto;
+  }
+  header .firstPage .resume:hover, header .firstPage .resume:focus {
+    background-color: #b0af7e;
+  }
+  .about img {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .skills .skillTypes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 480px) {
   header button {
     left: 38%;
   }
   .workContainer {
-    margin-bottom: 600px;
-  }
-  .paragraphLeft,
-.paragraphRight {
-    margin-top: 50%;
+    margin-bottom: 60px;
   }
   .paragraphLeft p,
 .paragraphRight p {
@@ -784,6 +829,10 @@ button:hover, button:focus {
     width: 60%;
     -ms-flex-item-align: center;
         align-self: center;
+    padding: 15px 0 30px 0;
+  }
+  .wrapperAbout h1 {
+    width: 90%;
   }
   h2 {
     font-size: 4rem;
@@ -804,15 +853,18 @@ button:hover, button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    z-index: 10;
+    z-index: 1000;
     width: 100vw;
-    height: 90vh;
+    height: 93vh;
   }
   header .wrapper.open li p {
     display: none;
   }
   header .wrapper.open li a {
     font-size: 5rem;
+  }
+  header .wrapper.open li a:hover {
+    color: blue;
   }
   header i {
     font-size: 40px;
@@ -830,9 +882,6 @@ button:hover, button:focus {
   .about p {
     text-align: justify;
     text-justify: inter-word;
-  }
-  header .firstPage .resume {
-    position: absolute;
   }
   .about {
     display: -webkit-box;
