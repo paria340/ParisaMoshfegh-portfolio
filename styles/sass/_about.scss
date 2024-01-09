@@ -1,99 +1,104 @@
-$greenColor:#B0AF7E;
+$greenColor: #b0af7e;
 $pinkColor: #fb607f;
 
 .wrapperAbout {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .wrapperAbout {
-    .about {
-        display: flex;
-        justify-content: space-around;
-        gap: 30px;
+  .about {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
 
-        > p {
-            max-width: 500px;
-        }
+    > p {
+      max-width: 500px;
     }
+  }
 
-    img {
-        width: 350px;
-        border-radius: 5px;
-    }
+  img {
+    width: 350px;
+    border-radius: 5px;
+  }
 
-    p {
-        font-size: 2rem;
-        line-height: 1.9;
-    }
+  p {
+    font-size: 2rem;
+    line-height: 1.9;
+  }
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .skills {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 
-    h1 {
-        padding-bottom: 0px;
-    }
-    
-    .cloud {
-        width: 350px; 
-        height: 120px;
-        background: #f2f9fe;
-        background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-        border-radius: 100px;
-        position: relative;
-        margin: 120px auto 20px;
-        z-index: 100;
-    }
-    
-    .cloud:after, .cloud:before {
-        content: '';
-        position: absolute;
-        background: #f2f9fe;
-        z-index: 10;
-    }
-    
-    .cloud:after {
-        width: 100px; 
-        height: 100px;
-        top: -50px; 
-        left: 50px;
-        border-radius: 100px;
-    }
-    
-    .cloud:before {
-        width: 180px; 
-        height: 180px;
-        top: -90px; 
-        right: 50px;
-        border-radius: 200px;
+  h1 {
+    padding-bottom: 0px;
+  }
+
+  .cloud {
+    width: 350px;
+    height: 160px;
+    background: #f2f9fe;
+    background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    border-radius: 100px;
+    position: relative;
+    margin: 120px auto 20px;
+    z-index: 100;
+  }
+
+  .cloud:after,
+  .cloud:before {
+    content: "";
+    position: absolute;
+    background: #f2f9fe;
+    z-index: 10;
+  }
+
+  .cloud:after {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 50px;
+    border-radius: 100px;
+  }
+
+  .cloud:before {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: 50px;
+    border-radius: 200px;
+  }
+
+  .skillTypes {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1%;
+    row-gap: 0.2%;
+
+    p {
+      z-index: 1000;
+      position: relative;
+      font-size: 20px;
+      color: black;
+      padding-bottom: 10px;
     }
 
-    .skillTypes {  
-        display: grid;
-        text-align: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        column-gap: 1%;
-        row-gap: 0.2%;
-
-        p {
-            z-index: 1000;
-            position: relative;
-            font-size: 20px;
-            color: black;
-            padding-bottom: 10px;
-        }
-
-        li {
-            z-index: 1000;
-            position: relative;
-            font-size: 20px;
-            max-width: 280px;
-            margin: 0 auto;
-        }
+    li {
+      z-index: 1000;
+      position: relative;
+      font-size: 20px;
+      max-width: 280px;
+      margin: 0 auto;
     }
+  }
 }
-
-

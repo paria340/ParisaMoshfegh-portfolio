@@ -1,7 +1,7 @@
-$baseFont: 'Lora', serif;
-$blackColor: #2C2C2C;
-$greenColor:#B0AF7E;
-$greyColor: rgb(169,169,169);
+$baseFont: "Lora", serif;
+$blackColor: #2c2c2c;
+$greenColor: #b0af7e;
+$greyColor: rgb(169, 169, 169);
 $pinkColor: #ea8a8a;
 
 body,
@@ -12,117 +12,129 @@ h3,
 h4,
 h5,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
-    background-color: $blackColor;
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  background-color: $blackColor;
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 h1 {
-    color: mix(black, white, 85%);
-	font-size: 7rem;  
-	font-weight: 900;
-	text-shadow: 
-		-0.0075em 0.0075em 0 mix(black, white, 94%),
-		0.005em 0.005em 0 mix(black, white, 60%),
-		0.01em 0.01em 0 mix(black, white, 62%), 
-		0.015em 0.015em mix(black, white, 64%), 
-		0.02em 0.02em 0 mix(black, white, 66%), 
-		0.025em 0.025em 0 mix(black, white, 68%),
-		0.03em 0.03em 0 mix(black, white, 70%),
-		0.035em 0.035em 0 mix(black, white, 72%);
+  color: mix(black, white, 85%);
+  font-size: 7rem;
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 mix(black, white, 94%),
+    0.005em 0.005em 0 mix(black, white, 60%),
+    0.01em 0.01em 0 mix(black, white, 62%),
+    0.015em 0.015em mix(black, white, 64%),
+    0.02em 0.02em 0 mix(black, white, 66%),
+    0.025em 0.025em 0 mix(black, white, 68%),
+    0.03em 0.03em 0 mix(black, white, 70%),
+    0.035em 0.035em 0 mix(black, white, 72%);
 }
 
-
 h2 {
-    font-size: 7rem;
-    color: white;
-    font-family: 'Corinthia', cursive;
+  font-size: 7rem;
+  color: white;
+  font-family: "Corinthia", cursive;
 }
 
 .underbar {
-    width: 0;
-    height: 5px;
-    background: rgba(100,100,200,0);
-    top: 20px;
-    position: absolute;
-    transition: all ease 0.5s;
+  width: 0;
+  height: 5px;
+  background: rgba(100, 100, 200, 0);
+  top: 20px;
+  position: absolute;
+  transition: all ease 0.5s;
 }
 
 h3 {
-    font-size: 6rem;
-    color: $greenColor;
-    text-align: center;
-    margin: 100px 0 100px 0;
-    text-transform: uppercase;
-    transition: all ease 0.5s;
-    &:hover,
-    &:focus{
-      text-shadow: 0px -2px 0px rgba(0,0,0,1), 0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
-    }
+  font-size: 6rem;
+  color: $greenColor;
+  text-align: center;
+  margin: 100px 0 100px 0;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  &:hover,
+  &:focus {
+    text-shadow: 0px -2px 0px rgba(0, 0, 0, 1), 0 0 5px rgba(255, 255, 255, 0.8),
+      0 -4px 15px rgba(255, 255, 255, 0.5);
+  }
 }
 
 h4 {
-    color: white;
-    font-size: 3rem;
-    &:hover,
-    &:focus{
-        color:$greenColor;
-    }
+  color: white;
+  font-size: 3rem;
+  &:hover,
+  &:focus {
+    color: $greenColor;
+  }
 }
 
 h5 {
-    color:black;
-    font-size: 2rem;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    margin-right: 20px;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 p {
-    color: white;
-    font-size: 1.8rem;
-    line-height: 1.5;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    &:hover,
-    &:focus{
-        color:#23A6D5;
-    }
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  &:hover,
+  &:focus {
+    color: #23a6d5;
+  }
 }
 
 i {
-    font-size: 60px;
-    padding: 10px;
-    color: #F7F4F3;
-    &:focus{
-        color: white;
-    }
+  font-size: 60px;
+  padding: 10px;
+  color: #f7f4f3;
+  &:focus {
+    color: white;
+  }
+}
+
+.logos {
+  ul {
+    display: flex;
+  }
+  i {
+    transition: all 0.2s;
+  }
+  i:hover,
+  i:focus {
+    color: blue;
+  }
 }
 
 footer {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 20px;
-    border-top: solid 1px black;
-    padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-top: solid 1px black;
+  padding-top: 20px;
 }
