@@ -352,6 +352,10 @@ i:focus {
   color: blue;
 }
 
+.mobileOnly {
+  display: none;
+}
+
 footer {
   width: 80%;
   margin: 0 auto;
@@ -741,7 +745,7 @@ button:hover, button:focus {
     width: 100%;
   }
   .paragraphRight,
-.paragraphLeft {
+  .paragraphLeft {
     width: 100%;
     padding-left: 0;
     text-align: center;
@@ -814,7 +818,7 @@ button:hover, button:focus {
     margin-bottom: 60px;
   }
   .paragraphLeft p,
-.paragraphRight p {
+  .paragraphRight p {
     direction: ltr;
     text-align: justify;
     text-justify: inter-word;
@@ -887,5 +891,8 @@ button:hover, button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mobileOnly {
+    display: inherit;
   }
 }
