@@ -1,16 +1,6 @@
-$greenColor: #b0af7e;
-$darkGrey: rgb(88, 88, 88);
-$pinkColor: #ea8a8a;
-
 .contactWrapper {
   width: 80%;
   margin: 0 auto;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0 60px 0;
 }
 
 .inputs {
@@ -22,10 +12,10 @@ h1 {
 
 input {
   margin-bottom: 20px;
-  background-color: #ee7752;
+  background-color: #d9b99b;
   border: none;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 input[type="text"],
@@ -36,6 +26,11 @@ textarea {
   padding-left: 10px;
 }
 
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 .info {
   display: flex;
   gap: 20px;
@@ -43,12 +38,12 @@ textarea {
 }
 
 textarea {
-  background-color: #ee7752;
+  background-color: #d9b99b;
   padding-top: 10px;
   margin-bottom: 10px;
   border: none;
   resize: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .sendMessage {
@@ -65,10 +60,10 @@ button {
   padding-bottom: 10px;
   width: 100px;
   transition: all 0.3s linear;
-  border-radius: 5px;
+  border-radius: 2px;
   &:hover,
   &:focus {
-    background-color: #ee7752;
+    background-color: #d9b99b;
     cursor: pointer;
   }
 }

@@ -1,12 +1,10 @@
 $blackColor: #2c2c2c;
 $pinkColor: #fbacbe;
 $greenColor: #a18276;
+$beige: #d9b99b;
 
 html {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  background-repeat: repeat;
+  background-color: black;
 }
 
 @keyframes gradient {
@@ -23,58 +21,98 @@ html {
 
 header {
   .wrapper {
-    max-width: 2000px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
   }
   .fa-bars {
     display: none;
   }
   nav {
-    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
 
     li {
       text-align: center;
+      padding-left: 20px;
     }
 
     ul {
       display: flex;
-      justify-content: space-around;
       padding-top: 40px;
     }
 
     p {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-size: 1.1rem;
+      padding-top: 40px;
+      flex: 1;
+      font-family: "Corinthia", cursive;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover,
+      &:focus {
+        color: #d9b99b;
+      }
+    }
+
+    i {
+      font-size: 25px;
+      transition: all 0.2s;
+      &:hover,
+      &:focus {
+        color: #d9b99b;
+      }
+    }
+
+    .logoContainer {
+      padding-left: 15px;
+    }
+
+    .logoContainer li {
+      padding: 0;
     }
   }
   .firstPage {
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 150px;
 
-    ul {
+    .about {
       display: flex;
-      justify-content: center;
-    }
+      justify-content: space-between;
+      gap: 30px;
 
-    .resume {
-      position: fixed;
-      transform: rotate(90deg);
-      text-transform: uppercase;
-      background-color: $pinkColor;
-      padding: 10px;
-      border-radius: 5px;
-      color: black;
-      &:hover,
-      &:focus {
-        background-color: $greenColor;
+      .leftContainer {
+        padding-top: 70px;
+        width: 650px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        width: 400px;
+        border-radius: 2px;
       }
     }
+  }
+}
+
+.resume {
+  position: fixed;
+  transform: rotate(90deg);
+  background-color: $beige;
+  padding: 10px;
+  border-radius: 2px;
+  color: black;
+  transition: all 0.2s;
+  &:hover,
+  &:focus {
+    background-color: $greenColor;
   }
 }
 

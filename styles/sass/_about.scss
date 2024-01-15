@@ -1,46 +1,16 @@
 $greenColor: #b0af7e;
 $pinkColor: #fb607f;
 
-.wrapperAbout {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-
-.wrapperAbout {
-  .about {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-
-    > p {
-      max-width: 500px;
-    }
-  }
-
-  img {
-    width: 350px;
-    border-radius: 5px;
-  }
-
-  p {
-    font-size: 2rem;
-    line-height: 1.9;
-  }
-}
 
 .leftContainer {
+  width: 450px;
   display: flex;
   flex-direction: column;
 }
 
 .skills {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-
-  h1 {
-    padding-bottom: 0px;
-  }
 
   .cloud {
     width: 350px;

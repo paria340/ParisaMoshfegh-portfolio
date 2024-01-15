@@ -1,4 +1,16 @@
 @media (max-width: 1240px) {
+  .firstPage {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    position: inherit;
+    order: 1;
+    padding-top: 40px;
+    span {
+      position: inherit;
+    }
+  }
   .imgContainer {
     width: 100%;
   }
@@ -28,7 +40,7 @@
   .info {
     margin-left: 0;
   }
-  header .firstPage .resume {
+  .resume {
     position: inherit;
     transform: rotate(0deg);
     display: flex;
@@ -36,7 +48,7 @@
     text-transform: uppercase;
     background-color: $pinkColor;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     color: black;
     width: 300px;
     margin: 10px auto 0 auto;
@@ -45,8 +57,11 @@
       background-color: $greenColor;
     }
   }
-  .about img {
-    display: none;
+  header .firstPage .about {
+    flex-direction: column;
+  }
+  header .firstPage .about .leftContainer {
+    width: 100%;
   }
 }
 
@@ -77,9 +92,11 @@
     width: 90%;
     align-self: center;
     padding: 15px 0 30px 0;
+    position: inherit;
   }
   .firstPage h1 {
     width: 60%;
+    position: inherit;
   }
   h2 {
     font-size: 4rem;
@@ -87,7 +104,7 @@
   a {
     font-size: 1.2rem;
   }
-  header .wrapper {
+  header .wrapper ul {
     display: none;
   }
   header .wrapper.open {
@@ -106,6 +123,9 @@
       &:hover {
         color: blue;
       }
+    }
+    ul {
+      display: inherit;
     }
   }
   header i {
@@ -131,5 +151,26 @@
   }
   .mobileOnly {
     display: inherit;
+  }
+  header .firstPage .about .leftContainer {
+    width: 100%;
+  }
+  header .firstPage .about img {
+    width: 100%;
+  }
+  .resume {
+    width: 80%;
+  }
+  .firstPage h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: -1;
+  }
+  header nav p {
+    padding-top: 0;
+  }
+  .wrapper {
+    padding-top: 30px;
   }
 }
