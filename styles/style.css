@@ -417,6 +417,8 @@ header nav {
   position: fixed;
   width: 100%;
   z-index: 10000;
+  background-color: black;
+  opacity: 0.8;
 }
 header nav li {
   text-align: center;
@@ -433,6 +435,7 @@ header nav p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-size: 40px;
   font-family: "Corinthia", cursive;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -530,62 +533,34 @@ header .firstPage .about img {
 .skills {
   width: 80%;
   margin: 0 auto;
+  color: white;
 }
 .skills .cloud {
-  width: 350px;
-  height: 160px;
-  background: #f2f9fe;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f2f9fe), to(#d6f0fd));
-  background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-  border-radius: 100px;
-  position: relative;
-  margin: 120px auto 20px;
-  z-index: 100;
-}
-.skills .cloud:after,
-.skills .cloud:before {
-  content: "";
-  position: absolute;
-  background: #f2f9fe;
-  z-index: 10;
-}
-.skills .cloud:after {
-  width: 100px;
-  height: 100px;
-  top: -50px;
-  left: 50px;
-  border-radius: 100px;
-}
-.skills .cloud:before {
-  width: 180px;
-  height: 180px;
-  top: -90px;
-  right: 50px;
-  border-radius: 200px;
+  height: 200px;
+  border-right: 1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .skills .skillTypes {
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  -webkit-column-gap: 1%;
-     -moz-column-gap: 1%;
-          column-gap: 1%;
-  row-gap: 0.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0;
+  width: 100%;
 }
-.skills .skillTypes p {
-  z-index: 1000;
-  position: relative;
-  font-size: 20px;
-  color: black;
-  padding-bottom: 10px;
+.skills .skillTypes h4 {
+  padding-bottom: 50px;
 }
 .skills .skillTypes li {
-  z-index: 1000;
-  position: relative;
   font-size: 20px;
   max-width: 280px;
-  margin: 0 auto;
+  padding: 10px;
 }
 
 .wrapperWork {
@@ -699,27 +674,32 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: black;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 
 ::-moz-placeholder {
-  color: white;
+  color: black;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
-  color: white;
+  color: black;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder {
-  color: white;
+  color: black;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 
 ::placeholder {
-  color: white;
+  color: black;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 
@@ -853,13 +833,7 @@ button:hover, button:focus {
   }
   header .firstPage .about .leftContainer {
     width: 100%;
-  }
-}
-@media (max-width: 850px) {
-  .skills .skillTypes {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 60px;
+    padding-top: 0px;
   }
 }
 @media (max-width: 480px) {
@@ -899,20 +873,9 @@ button:hover, button:focus {
   }
   header .wrapper.open {
     background: rgba(0, 0, 0, 0.8);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
     z-index: 1000;
     width: 100vw;
     height: 93vh;
-  }
-  header .wrapper.open li p {
-    display: none;
   }
   header .wrapper.open li a {
     font-size: 5rem;
@@ -922,6 +885,19 @@ button:hover, button:focus {
   }
   header .wrapper.open ul {
     display: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper.open .logoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   header i {
     font-size: 40px;
@@ -949,9 +925,6 @@ button:hover, button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mobileOnly {
-    display: inherit;
-  }
   header .firstPage .about .leftContainer {
     width: 100%;
   }
@@ -977,5 +950,8 @@ button:hover, button:focus {
   }
   .wrapper {
     padding-top: 30px;
+  }
+  header nav p {
+    font-size: 20px;
   }
 }

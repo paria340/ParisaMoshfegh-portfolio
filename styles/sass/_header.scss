@@ -36,6 +36,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10000;
+    background-color: black;
+    opacity: 0.8;
 
     li {
       text-align: center;
@@ -50,6 +52,7 @@ header {
     p {
       padding-top: 40px;
       flex: 1;
+      font-size: 40px;
       font-family: "Corinthia", cursive;
       cursor: pointer;
       transition: all 0.2s;
