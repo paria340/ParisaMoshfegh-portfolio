@@ -589,6 +589,9 @@ header .firstPage .about img {
   display: flex;
   min-height: 1px;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .workContainer .paragraphRight a,
 .workContainer .paragraphLeft a {
@@ -860,7 +863,7 @@ button:hover, button:focus {
     left: 38%;
   }
   .workContainer {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .paragraphLeft p,
   .paragraphRight p {
