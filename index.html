@@ -25,8 +25,10 @@
         <header>
             <nav>
                 <div class="wrapper">
-                    <i class="fas fa-bars"></i>
-                    <p>Parisa Moshfegh</p>
+                    <div class="flexContainer">
+                        <i class="fas fa-bars"></i>
+                        <a href="#home">Parisa Moshfegh</a>
+                    </div>
                     <ul>
                         <li>
                             <a href="#work">work</a>
@@ -104,22 +106,24 @@
                 <div class="paragraphLeft">
                     <h4>My shop</h4>
                     <p>
-                        Current ongoing project, wanting to provide local food buisnesses a platform for online ordering and delivery. An admin panel for the buisness owner to be able to update the menu on each specific date and deliver the item based on the location of the costumer.
+                        Current ongoing project, wanting to provide local food buisnesses a platform for online ordering
+                        and delivery. An admin panel for the buisness owner to be able to update the menu on each
+                        specific date and deliver the item based on the location of the costumer.
                     </p>
                     <a href="https://github.com/paria340/my-shop">See the code</a>
                     <div class="icons">
+                        <i class="fab fa-node-js"></i>
+                        <i class="fab fa-react"></i>
                         <i class="fab fa-github-square"></i>
                         <i class="fab fa-html5"></i>
-                        <i class="fa-brands fa-node-js"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="devicon-firebase-plain"></i>
                     </div>
                 </div>
             </div>
             <div class="workContainer">
                 <div class="imgContainer">
-                    <img src="./images/ethicalMakeup.png" alt="first page of ethicalMakeup website" />
-                    <div class="overlay"></div>
+                    <img src="./images/ethicalMakeup.png"
+                            alt="first page of ethicalMakeup website" />
+                    <a href="https://ethical-makeup-always-vegan.netlify.app/"><div class="overlay"></div></a>
                 </div>
                 <div class="paragraphRight">
                     <h4>Ethical Makeup</h4>
@@ -163,13 +167,13 @@
                 </div>
                 <div class="imgContainer">
                     <img src="./images/bookGrenius.png" alt="first page of bookGenius website" />
-                    <div class="overlay"></div>
+                    <a href="https://romantic-liskov-151b96.netlify.app"><div class="overlay"></div></a>
                 </div>
             </div>
             <div class="workContainer">
                 <div class="imgContainer">
                     <img src="./images/woof.png" alt="first page of woof website" />
-                    <div class="overlay"></div>
+                    <a href="https://woofwoof-website.netlify.app/"><div class="overlay"></div></a>
                 </div>
                 <div class="paragraphRight">
                     <h4>All The Woofs</h4>
@@ -208,7 +212,7 @@
                 </div>
                 <div class="imgContainer">
                     <img src="./images/captured.png" alt="first page of captured website" />
-                    <div class="overlay"></div>
+                    <a href="https://vigilant-nightingale-e92716.netlify.app/"><div class="overlay"></div></a>
                 </div>
             </div>
         </section>
@@ -218,7 +222,7 @@
             <ul class="skillTypes">
                 <div class="cloud">
                     <li>
-                        <h4>Front-end Stack :</h4>
+                        <h4>Front-end Stack </h4>
                         React, Vue.js, JavaScript, jQuery, SCSS, BootStrap, JEST & Jasmine testing
                     </li>
                 </div>
@@ -230,13 +234,13 @@
                 </div>
                 <div class="cloud">
                     <li>
-                        <h4>Other Skills :</h4>
+                        <h4>Other Skills</h4>
                         Version Control, Git, BitBucket, Figma, Jira, Agile, Canva, database managment
                     </li>
                 </div>
                 <div class="cloud">
                     <li>
-                        <h4>Soft Skills :</h4>
+                        <h4>Soft Skills</h4>
                         Leadership and Mentoring, Team Communications, Analytical thinking along with Creativity
                     </li>
                 </div>
@@ -245,7 +249,7 @@
         <section class="contact contactWrapper" id="contact">
             <h2>CONTACT ME</h2>
             <div class="underbar"></div>
-            <form action="mailto:paria340@gmail.com" method='POST'>
+            <form action="mailto:paria340@gmail.com" method='POST' enctype="text/plain">
                 <div class="inputs">
                     <label for="fullName"></label>
                     <input type="text" id="fullName" class="fullName" name="fullName" placeholder="Your Name"
@@ -261,7 +265,7 @@
                     <label for="message"></label>
                     <textarea name="message" class="message" id="message" cols="50" rows="6" required=""
                         placeholder="Tell me anything I need to hear!"></textarea>
-                    <button type="submit" onclick="sendEmail()">Send</button>
+                    <button type="submit" value="Send">Send</button>
                     <div class="sendConfirm"></div>
                 </div>
                 <div class="info">

@@ -11,13 +11,15 @@ $pinkColor: #ea8a8a;
   display: flex;
   min-height: 1px;
   margin-bottom: 20px;
-  a {
+  .paragraphRight a,
+  .paragraphLeft a {
     font-size: 1.7rem;
     padding: 10px;
     text-transform: uppercase;
     color: black;
-    background-color: $pinkColor;
     border-radius: 2px;
+    background-color: $pinkColor;
+    margin-right: 5px;
 
     &:hover,
     &:focus {
