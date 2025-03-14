@@ -49,8 +49,40 @@ document.onreadystatechange = function () {
   }
 };
 
+portfolioApp.handleFormSubmit = function () {
+  const form = document.getElementById("contactForm");
+
+  emailjs.init("xEhKgBNz5rcoTDgKo");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {
+      fullName: formData.get("fullName"),
+      subject: formData.get("subject"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    emailjs
+      .send("service_jq8rt7j", "template_e06s9rw", data)
+      .then(
+        function () {
+          alert("Message sent successfully!");
+          form.reset();
+        },
+        function (error) {
+          console.error("Failed to send the message:", error);
+          alert("Failed to send the message. Please check the console for details.");
+        }
+      );
+  });
+};
+
 portfolioApp.init = function () {
   portfolioApp.pictureAnime();
+  portfolioApp.handleFormSubmit();
 };
 
 portfolioApp.init();
